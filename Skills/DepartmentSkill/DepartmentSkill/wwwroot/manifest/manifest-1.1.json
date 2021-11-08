@@ -1,0 +1,124 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json",
+  "$id": "DepartmentSkill",
+  "name": "DepartmentSkill",
+  "description": "DepartmentSkill description",
+  "publisherName": "Your Company",
+  "version": "1.1",
+  "iconUrl": "https://homer-uat-departmentskill-gwzxult.azurewebsites.net/DepartmentSkill.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://homer-uat-departmentskill-gwzxult.azurewebsites.net/privacy.html",
+  "tags": [
+    "sample",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the DepartmentSkill",
+      "endpointUrl": "https://homer-testrun2-departmentskill-uftkk2b.azurewebsites.net/api/messages",
+      "msAppId": "c80ef98c-2d49-4f0b-918f-42da8ede106e"
+    }
+  ],
+  "dispatchModels": {
+    "languages": {
+      "en-us": [
+        {
+          "id": "DepartmentSkillLuModel-en",
+          "name": "DepartmentSkill LU (English)",
+          "contentType": "application/lu",
+          "url": "file://DepartmentSkill.lu",
+          "description": "English language model for the skill"
+        }
+      ],
+      "de-de": [
+        {
+          "id": "DepartmentSkillLuModel-de",
+          "name": "DepartmentSkill LU (German)",
+          "contentType": "application/lu",
+          "url": "file://DepartmentSkill.lu",
+          "description": "German language model for the skill"
+        }
+      ],
+      "es-es": [
+        {
+          "id": "DepartmentSkillLuModel-es",
+          "name": "DepartmentSkill LU (Spanish)",
+          "contentType": "application/lu",
+          "url": "file://DepartmentSkill.lu",
+          "description": "Spanish language model for the skill"
+        }
+      ],
+      "fr-fr": [
+        {
+          "id": "DepartmentSkillLuModel-fr",
+          "name": "DepartmentSkill LU (French)",
+          "contentType": "application/lu",
+          "url": "file://DepartmentSkill.lu",
+          "description": "French language model for the skill"
+        }
+      ],
+      "it-it": [
+        {
+          "id": "DepartmentSkillLuModel-it",
+          "name": "DepartmentSkill LU (Italian)",
+          "contentType": "application/lu",
+          "url": "file://DepartmentSkill.lu",
+          "description": "Italian language model for the skill"
+        }
+      ],
+      "zh-cn": [
+        {
+          "id": "DepartmentSkillLuModel-zh",
+          "name": "DepartmentSkill LU (Chinese)",
+          "contentType": "application/lu",
+          "url": "file://DepartmentSkill.lu",
+          "description": "Chinese language model for the skill"
+        }
+      ]
+    },
+    "intents": {
+      "Sample": "#/activities/message",
+      "*": "#/activities/message"
+    }
+  },
+  "activities": {
+    "sampleAction": {
+      "description": "Sample action which accepts an input object and returns an object back.",
+      "type": "event",
+      "name": "SampleAction",
+      "value": {
+        "$ref": "#/definitions/inputObject"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/responseObject"
+      }
+    },
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    }
+  },
+  "definitions": {
+    "inputObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The users name."
+        }
+      }
+    },
+    "responseObject": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer",
+          "description": "A customer identifier."
+        }
+      }
+    }
+  }
+}

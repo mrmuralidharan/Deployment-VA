@@ -1,0 +1,523 @@
+{
+  "error": null,
+  "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Resources/deployments/template",
+  "name": "template",
+  "properties": {
+    "correlationId": "4097038a-92fa-4a7b-aa58-b003cc27098d",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.DocumentDB/databaseAccounts/hdvapager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdvapager",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.DocumentDB/databaseAccounts/hdvapager/sqlDatabases/botstate-db",
+        "resourceGroup": "hdVAPager",
+        "resourceName": "hdvapager/botstate-db",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Web/serverfarms/hdVAPager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdVAPager",
+            "resourceType": "Microsoft.Web/serverfarms"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2018-07-01",
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Storage/storageAccounts/hdvapager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdvapager",
+            "resourceType": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.CognitiveServices/accounts/hdVAPager-luisauthoring",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdVAPager-luisauthoring",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.CognitiveServices/accounts/hdVAPager-luisauthoring",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdVAPager-luisauthoring",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.CognitiveServices/accounts/HDPager-luisprediction-aznblrb",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "HDPager-luisprediction-aznblrb",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2015-04-08",
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.DocumentDB/databaseAccounts/hdvapager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdvapager",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          },
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.DocumentDB/databaseAccounts/hdvapager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdvapager",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          },
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Insights/components/hdVAPager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdVAPager",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Web/sites/HDPager-aznblrb",
+        "resourceGroup": "hdVAPager",
+        "resourceName": "HDPager-aznblrb",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Web/sites/HDPager-aznblrb",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "HDPager-aznblrb",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Insights/components/hdVAPager",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "hdVAPager",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.BotService/botServices/HDPager-aznblrb",
+        "resourceGroup": "hdVAPager",
+        "resourceName": "HDPager-aznblrb",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.CognitiveServices/accounts/HDPager-luisprediction-aznblrb",
+            "resourceGroup": "hdVAPager",
+            "resourceName": "HDPager-luisprediction-aznblrb",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.CognitiveServices/accounts/hdVAPager-luisauthoring",
+        "resourceGroup": "hdVAPager",
+        "resourceName": "hdVAPager-luisauthoring",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      }
+    ],
+    "duration": "PT0S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "hdVAPager"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "hdVAPager"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "HDPager-aznblrb"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "HDPager-aznblrb"
+      },
+      "cosmosDbDatabaseName": {
+        "type": "String",
+        "value": "botstate-db"
+      },
+      "cosmosDbDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "hdVAPager"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "hdVAPager-luisauthoring"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisPredictionLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisPredictionName": {
+        "type": "String",
+        "value": "HDPager-luisprediction-aznblrb"
+      },
+      "luisPredictionSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "4191d9ee-3403-435e-b875-b4dcf919865f"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "pager@123"
+      },
+      "name": {
+        "type": "String",
+        "value": "HDPager"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "HDPager-aznblrb"
+      },
+      "rgName": {
+        "type": "String",
+        "value": "hdVAPager"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "hdVAPager"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "aznblrb"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": false
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      },
+      "virtualAssistant": {
+        "type": "String",
+        "value": "hdVAPager"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "accounts",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "1118660414859607113",
+    "templateLink": null,
+    "timestamp": "2021-10-20T11:15:56.109581+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Resources/deployments/99ea37e6-a3e6-4102-a249-71c880607386",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.DocumentDB/databaseAccounts/hdvapager",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.DocumentDB/databaseAccounts/hdvapager/sqlDatabases/botstate-db",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Storage/storageAccounts/hdvapager",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Web/serverFarms/hdVAPager",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Insights/components/hdVAPager",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.Web/sites/HDPager-aznblrb",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.BotService/botServices/HDPager-aznblrb",
+        "resourceGroup": "hdVAPager"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdVAPager/providers/Microsoft.CognitiveServices/accounts/HDPager-luisprediction-aznblrb",
+        "resourceGroup": "hdVAPager"
+      }
+    ]
+  },
+  "resourceGroup": "hdVAPager",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "65283124-9bc1-49af-8c7c-6468991e6420"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=hdvapager;AccountKey=doMEwJ5TwDyhKnl+xcoqdkvPWLbww+QDC/9ASLvohqJzEPK7q8VkzgivCNi4906zfvvYv9wxmHK45RO1dGEB3g==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "HDPager-aznblrb"
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "Y5XCZKHInn5oRj43mFnDCCE0hkpeG189896TwHR5k5Hdqfccq7l6LVrCCsDsTQrAdTfnSW6H9T7RXVkSkMFB4A==",
+      "containerId": "HDPager-state",
+      "cosmosDBEndpoint": "https://hdvapager.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "authoringEndpoint": "https://hdvapager-luisauthoring.cognitiveservices.azure.com/",
+      "authoringKey": "df464aa2c07a44fa964deb185edea15b",
+      "authoringRegion": "westus",
+      "predictionAccountName": "HDPager-luisprediction-aznblrb",
+      "predictionKey": "a478162f9b1e40958deaee6f1b370381",
+      "predictionRegion": "eastus"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "HDPager"
+  }
+}

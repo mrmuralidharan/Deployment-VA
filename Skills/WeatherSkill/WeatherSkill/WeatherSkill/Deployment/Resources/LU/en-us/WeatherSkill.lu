@@ -1,0 +1,182 @@
+> # Intent definitions
+
+#ForecastWeather
+- forecast {geographyV2}
+- forecast atlanta
+- forecast {postalCode}
+- forecast {postalCode=999}
+- forecast {postalCode=A999}
+- forecast {postalCode=9999}
+- forecast {postalCode=96898}
+- forecast {postalCode=A9999}
+- forecast {postalCode=AA 99}
+- forecast {postalCode=99999}
+- forecast {postalCode=99-999}
+- forecast {postalCode=99 999}
+- forecast {postalCode=999 99}
+- forecast {postalCode=AA9999}
+- forecast {postalCode=999999}
+- forecast {postalCode=AAA9999}
+- forecast {postalCode=AA-9999}
+- forecast {postalCode=AAAAA99}
+- forecast {postalCode=AA9 9AA}
+- forecast {postalCode=9999999}
+- forecast {postalCode=A9A 9A9}
+- forecast {postalCode=9999 AA}
+- forecast {postalCode=AA99999}
+- forecast {postalCode=AA 9999}
+- forecast {postalCode=9999 AW}
+- forecast {postalCode=AI-9999}
+- forecast {postalCode=AAAA 1AA}
+- forecast {postalCode=9999-999}
+- forecast {postalCode=AAA9 1AA}
+- forecast {postalCode=A9990000}
+- forecast {postalCode=AAA 9999}
+- forecast {postalCode=999-9999}
+- forecast {postalCode=AA99 9AA}
+- forecast {postalCode=AAAA 9AA}
+- forecast {postalCode=AA9-9999}
+- forecast {postalCode=A9999AAA}
+- forecast {postalCode=99999-999}
+- forecast {postalCode=99999-9999}
+- forecast weather at {geographyV2}
+- forecast weather at atlanta
+- forecast weather at {postalCode}
+- forecast weather at {postalCode=999}
+- forecast weather at {postalCode=A999}
+- forecast weather at {postalCode=9999}
+- forecast weather at {postalCode=96898}
+- forecast weather at {postalCode=A9999}
+- forecast weather at {postalCode=AA 99}
+- forecast weather at {postalCode=99999}
+- forecast weather at {postalCode=99-999}
+- forecast weather at {postalCode=99 999}
+- forecast weather at {postalCode=999 99}
+- forecast weather at {postalCode=AA9999}
+- forecast weather at {postalCode=999999}
+- forecast weather at {postalCode=AAA9999}
+- forecast weather at {postalCode=AA-9999}
+- forecast weather at {postalCode=AAAAA99}
+- forecast weather at {postalCode=AA9 9AA}
+- forecast weather at {postalCode=9999999}
+- forecast weather at {postalCode=A9A 9A9}
+- forecast weather at {postalCode=9999 AA}
+- forecast weather at {postalCode=AA99999}
+- forecast weather at {postalCode=AA 9999}
+- forecast weather at {postalCode=9999 AW}
+- forecast weather at {postalCode=AI-9999}
+- forecast weather at {postalCode=AA99 9AA}
+- forecast weather at {postalCode=AAAA 1AA}
+- forecast weather at {postalCode=9999-999}
+- forecast weather at {postalCode=AAA9 1AA}
+- forecast weather at {postalCode=A9990000}
+- forecast weather at {postalCode=AAA 9999}
+- forecast weather at {postalCode=999-9999}
+- forecast weather at {postalCode=AAAA 9AA}
+- forecast weather at {postalCode=AA9-9999}
+- forecast weather at {postalCode=AA9A 1AA}
+- forecast weather at {postalCode=A9999AAA}
+- forecast weather at {postalCode=99999-999}
+- forecast weather at {postalCode=99999-9999}
+
+#CheckWeatherValue
+- weather at {geographyV2}
+- weather at shanghai
+- weather {geographyV2}
+- weather atlanta
+- weather {postalCode}
+- weather {postalCode=999}
+- weather {postalCode=A999}
+- weather {postalCode=9999}
+- weather {postalCode=96898}
+- weather {postalCode=A9999}
+- weather {postalCode=AA 99}
+- weather {postalCode=99999}
+- weather {postalCode=99-999}
+- weather {postalCode=99 999}
+- weather {postalCode=999 99}
+- weather {postalCode=AA9999}
+- weather {postalCode=999999}
+- weather {postalCode=AAA9999}
+- weather {postalCode=AA-9999}
+- weather {postalCode=AAAAA99}
+- weather {postalCode=AA9 9AA}
+- weather {postalCode=9999999}
+- weather {postalCode=A9A 9A9}
+- weather {postalCode=9999 AA}
+- weather {postalCode=AA99999}
+- weather {postalCode=AA 9999}
+- weather {postalCode=9999 AW}
+- weather {postalCode=AI-9999}
+- weather {postalCode=AA99 9AA}
+- weather {postalCode=AAAA 1AA}
+- weather {postalCode=9999-999}
+- weather {postalCode=AAA9 1AA}
+- weather {postalCode=A9990000}
+- weather {postalCode=AAA 9999}
+- weather {postalCode=999-9999}
+- weather {postalCode=AAAA 9AA}
+- weather {postalCode=AA9-9999}
+- weather {postalCode=AA9A 1AA}
+- weather {postalCode=A9999AAA}
+- weather {postalCode=99999-999}
+- weather {postalCode=99999-9999}
+- weather at {postalCode}
+- weather at {postalCode=999}
+- weather at {postalCode=A999}
+- weather at {postalCode=9999}
+- weather at {postalCode=96898}
+- weather at {postalCode=A9999}
+- weather at {postalCode=AA 99}
+- weather at {postalCode=99999}
+- weather at {postalCode=99-999}
+- weather at {postalCode=99 999}
+- weather at {postalCode=999 99}
+- weather at {postalCode=AA9999}
+- weather at {postalCode=999999}
+- weather at {postalCode=AAA9999}
+- weather at {postalCode=AA-9999}
+- weather at {postalCode=AAAAA99}
+- weather at {postalCode=AA9 9AA}
+- weather at {postalCode=9999999}
+- weather at {postalCode=A9A 9A9}
+- weather at {postalCode=9999 AA}
+- weather at {postalCode=AA99999}
+- weather at {postalCode=AA 9999}
+- weather at {postalCode=9999 AW}
+- weather at {postalCode=AI-9999}
+- weather at {postalCode=AAAA 1AA}
+- weather at {postalCode=9999-999}
+- weather at {postalCode=AAA9 1AA}
+- weather at {postalCode=A9990000}
+- weather at {postalCode=AAA 9999}
+- weather at {postalCode=999-9999}
+- weather at {postalCode=AA99 9AA}
+- weather at {postalCode=AAAA 9AA}
+- weather at {postalCode=AA9-9999}
+- weather at {postalCode=AA9A 1AA}
+- weather at {postalCode=A9999AAA}
+- weather at {postalCode=99999-999}
+- weather at {postalCode=99999-9999}
+
+# None
+- all of them
+- i want them all
+- i want to all of them
+
+> # Entity definitions
+
+$postalCode:simple
+
+> # PREBUILT Entity definitions
+
+$PREBUILT:geographyV2
+
+
+> # Phrase list definitions
+
+> # List entities
+
+> # RegEx entities
+
+

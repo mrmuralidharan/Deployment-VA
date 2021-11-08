@@ -1,0 +1,28 @@
+Microsoft (R) Build Engine version 16.9.0+57a23d249 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+{
+  "active": false,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2021-10-20T13:03:19.2083514Z",
+  "id": "97a9dd1d1f22468193031e83fd6b0f18",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2021-10-20T13:03:19.2083514Z",
+  "log_url": "https://vasssss.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2021-10-20T13:03:10.242926Z",
+  "site_name": "vasssss",
+  "start_time": "2021-10-20T13:03:10.477355Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://vasssss.scm.azurewebsites.net/api/deployments/latest"
+}
+WARNING: Getting scm site credentials for zip deployment
+WARNING: Starting zip deployment. This operation can take a while to complete ...
+WARNING: Deployment endpoint responded with status code 202

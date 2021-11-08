@@ -1,0 +1,36 @@
+﻿# Sample
+- sample dialog
+- demo dialog
+- Test dialog
+- Run dialog
+- run sample dialog
+
+# None
+- hi
+- hello
+- logout
+- goodbye
+
+# DeptLookup
+
+> department
+- what department is {DeptDetail}?
+- what department is {DeptDetail}
+- department {DeptDetail}?
+- department {DeptDetail}
+- department {DeptDetail=PAINT}?
+- department {DeptDetail=backend}?
+- department {DeptDetail=back end}?
+- department {DeptDetail=90}
+- what department is {DeptDetail=PAINT}?
+- what department is {DeptDetail=backend}?
+- what department is {DeptDetail=back end}?
+- what department is {DeptDetail=90}?
+- what department is {DeptDetail=HARDWARE}
+- what department is {DeptDetail=backend}
+- what department is {DeptDetail=back end}
+- what department is {DeptDetail=90}
+
+
+> # Entity definitions
+$DeptDetail:simple

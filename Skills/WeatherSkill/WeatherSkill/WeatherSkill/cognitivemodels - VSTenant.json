@@ -1,0 +1,29 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "authoringkey": "2afa4ba0919043058e314b8f16289e13",
+          "endpoint": "https://weather-authoring.cognitiveservices.azure.com/",
+          "id": "General",
+          "appid": "07b75924-6e09-4ac1-a3f2-26fd4b7006c8",
+          "version": "0.1",
+          "region": "eastus",
+          "name": "Weather-Skill1-usen-us_General",
+          "subscriptionkey": "824fb008d3a149d198f2f254cc6102bd"
+        },
+        {
+          "authoringkey": "2afa4ba0919043058e314b8f16289e13",
+          "endpoint": "https://weather-authoring.cognitiveservices.azure.com/",
+          "id": "WeatherSkill",
+          "appid": "c711b5d2-0ec7-472d-a2e6-0a6d2167b4d9",
+          "version": "0.1",
+          "region": "eastus",
+          "name": "Weather-Skill1-usen-us_WeatherSkill",
+          "subscriptionkey": "824fb008d3a149d198f2f254cc6102bd"
+        }
+      ]
+    }
+  }
+}

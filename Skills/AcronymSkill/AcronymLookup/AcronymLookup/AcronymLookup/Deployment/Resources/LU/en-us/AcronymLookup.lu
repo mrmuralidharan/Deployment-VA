@@ -1,0 +1,62 @@
+﻿# Sample
+- sample dialog
+- demo dialog
+- Test dialog
+- Run dialog
+- run sample dialog
+
+# None
+- hi
+- hello
+- logout
+- goodbye
+
+#AcronymLookup
+- {Operation=Add} Acronym {Acronym=PCF} with {Description=Internet Engineering Task Force - The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet.}
+- {Operation=Add} Acronym {Acronym=MTC} with {Description=Marietta Technology Center. Located at 2250 Newmarket Parkway, Marietta, GA 30067}
+- {Operation=Add} Acronym {Acronym=DAO} with {Description=In computer software, a data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanism.}
+- {Operation=Add} Acronym {Acronym=asd} with {Description=more standard test data}
+- {Operation=Add} Acronym {Acronym=HOMER} with {Description=Homer D. Poe}
+- {Operation=Add} Acronym {Acronym=WSL} with {Description=Windows Subsystem for Linux}
+- {Operation=Add} Acronym {Acronym=OCC} with {Description=Operations Command Center}
+- {Operation=Add} Acronym {Acronym=HRS} with {Description=Home Renovation Services; Hours - A duration of time measured in hours.}
+- {Operation=Add} Acronym {Acronym=CCPA} with {Description=California Consumer Privacy Act.}
+- {Operation=Add} Acronym {Acronym=LOWES} with {Description=who}
+- {Operation=Add} Acronym {Acronym=IIWII} with {Description=It is what it is}
+- {Operation=Add} Acronym {Acronym=FE3H} with {Description=Fire Emblem Three Houses}
+- {Operation=Add} Acronym {Acronym=SVOC} with {Description=Single View of Customer.  Restful web services that resides on the store (STORESVOC) and on the Host (Central Tomcat Grid) that use DB2 to maintain THD customer data.  Currently in Production for PRO customer data.}
+- {Operation=Add} Acronym {Acronym=R52W} with {Description=Rolling 52 Weeks}
+- {Operation=Edit} Acronym {Acronym=R52W} with {Description=Rolling 52 Weeks}
+- {Operation=Edit} Acronym {Acronym=PCF} with {Description=Internet Engineering Task Force - The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet.}
+- {Operation=Edit} Acronym {Acronym=MTC} with {Description=Marietta Technology Center. Located at 2250 Newmarket Parkway, Marietta, GA 30067}
+- {Operation=Edit} Acronym {Acronym=DAO} with {Description=Add Acronym DAO with In computer software, a data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanism.}
+- {Operation=Edit} Acronym {Acronym=asd} with {Description=more standard test data}
+- {Operation=Edit} Acronym {Acronym=HOMER} with {Description=Homer D. Poe}
+- {Operation=Edit} Acronym {Acronym=WSL} with {Description=Windows Subsystem for Linux}
+- {Operation=Edit} Acronym {Acronym=OCC} with {Description=Operations Command Center}
+- {Operation=Edit} Acronym {Acronym=HRS} with {Description=Home Renovation Services; Hours - A duration of time measured in hours.}
+- {Operation=Edit} Acronym {Acronym=CCPA} with {Description=California Consumer Privacy Act.}
+- {Operation=Edit} Acronym {Acronym=LOWES} with {Description=who}
+- {Operation=Edit} Acronym {Acronym=IIWII} with {Description=It is what it is}
+- {Operation=Edit} Acronym {Acronym=FE3H} with {Description=Fire Emblem Three Houses}
+- {Operation=Edit} Acronym {Acronym=SVOC} with {Description=Single View of Customer.  Restful web services that resides on the store (STORESVOC) and on the Host (Central Tomcat Grid) that use DB2 to maintain THD customer data.  Currently in Production for PRO customer data.}
+- {Operation=Delete} Acronym {Acronym=PCF}
+- {Operation=Delete} Acronym {Acronym=R52W}
+- {Operation=Delete} Acronym {Acronym=HOMER}
+- {Operation=Delete} Acronym {Acronym=CCPA}
+- {Operation=Delete} Acronym {Acronym=LOWES}
+- {Operation=Delete} Acronym {Acronym=IIWII}
+- {Operation=Delete} Acronym {Acronym=FE3H}
+- {Operation=Delete} Acronym {Acronym=SVOC}
+- {Operation=Count} Acronym
+- Acronym {Operation=Lookup} {Acronym=PCF}
+- Acronym {Operation=Lookup} {Acronym=R52W}
+- Acronym {Operation=Lookup} {Acronym=HOMER}
+- Acronym {Operation=Lookup} {Acronym=CCPA}
+- Acronym {Operation=Lookup} {Acronym=LOWES}
+- Acronym {Operation=Lookup} {Acronym=IIWII}
+- Acronym {Operation=Lookup} {Acronym=FE3H}
+- Acronym {Operation=Lookup} {Acronym=SVOC}
+- {Operation=Teach} me an Acronym
+- {Operation=Teach} me a Acronym
+- {Operation=Teach} me Acronym

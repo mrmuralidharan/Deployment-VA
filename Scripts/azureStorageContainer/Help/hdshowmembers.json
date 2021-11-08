@@ -1,0 +1,32 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "$data": "${policies}",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "**Members of ${policyname}**",
+            "wrap": true,
+            "size": "Large"
+        },
+        {
+            "$data": "${userdetails}",
+            "type": "TextBlock",
+            "text": "${users}",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "wrap": true,
+            "text": "To Page this team,copy this command and send it separately.",
+            "size": "Small"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Page:${policyname}",
+            "wrap": true,
+            "size": "Small"
+        }
+    ]
+}

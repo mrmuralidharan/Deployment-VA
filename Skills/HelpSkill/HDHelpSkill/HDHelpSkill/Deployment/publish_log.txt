@@ -1,0 +1,28 @@
+Microsoft (R) Build Engine version 16.10.1+2fd48ab73 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2021-10-16T13:17:00.9703114Z",
+  "id": "d39aa8cc9e094a2d94aee9be3017dd49",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2021-10-16T13:17:00.9703114Z",
+  "log_url": "https://homer-testrun2-helpskill-uftkk2b.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2021-10-16T13:16:58.163184Z",
+  "site_name": "Homer-TestRun2-HelpSkill-uftkk2b",
+  "start_time": "2021-10-16T13:16:58.2881873Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://homer-testrun2-helpskill-uftkk2b.scm.azurewebsites.net/api/deployments/latest"
+}
+WARNING: Getting scm site credentials for zip deployment
+WARNING: Starting zip deployment. This operation can take a while to complete ...
+WARNING: Deployment endpoint responded with status code 202

@@ -1,0 +1,28 @@
+Microsoft (R) Build Engine version 16.10.1+2fd48ab73 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+{
+  "active": false,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2021-10-16T13:30:40.8244159Z",
+  "id": "c49674e99334470e8ad15408c3d92735",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2021-10-16T13:30:40.8244159Z",
+  "log_url": "https://homer-testrun2-o365healthskill-uftkk2b.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2021-10-16T13:30:36.0408581Z",
+  "site_name": "Homer-TestRun2-O365HealthSkill-uftkk2b",
+  "start_time": "2021-10-16T13:30:36.2896252Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://homer-testrun2-o365healthskill-uftkk2b.scm.azurewebsites.net/api/deployments/latest"
+}
+WARNING: Getting scm site credentials for zip deployment
+WARNING: Starting zip deployment. This operation can take a while to complete ...
+WARNING: Deployment endpoint responded with status code 202

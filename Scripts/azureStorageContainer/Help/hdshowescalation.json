@@ -1,0 +1,33 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "**List of Escalation Policies**",
+            "wrap": true,
+            "size": "Large"
+        },
+       
+        {
+            "type": "Input.ChoiceSet",
+            "id": "inputchoice",
+            "choices": [
+                {
+                    "$data": "${policies}",
+                    "title": "${policyname}",
+                    "value": "${id}"
+                }
+            ],
+            "placeholder": "Select Escalation Policy"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Show Members",
+            "style": "positive"
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+[
+    {
+        "Acronym": "ASDS",
+        "Description": "Associate support department supervisor"
+    },
+    {
+        "Acronym": "SKU",
+        "Description": "Stock keeping unit"
+    },
+    {
+        "Acronym": "BBH",
+        "Description": "Building better health"
+    },
+    {
+        "Acronym": "CRTV",
+        "Description": "Centralized return to vendor"
+    },
+    {
+        "Acronym": "DC",
+        "Description": "Distribution center"
+    },
+    {
+        "Acronym": "DIFM",
+        "Description": "Do-it-for-me"
+    },
+    {
+        "Acronym": "DIY",
+        "Description": "Do-it-yourself"
+    },
+    {
+        "Acronym": "DM",
+        "Description": "District manager"
+    },
+    {
+        "Acronym": "DS",
+        "Description": "Department supervisor"
+    },
+    {
+        "Acronym": "EAS",
+        "Description": "Electronic article surveillance"
+    },
+    {
+        "Acronym": "ESPP",
+        "Description": "Employee stock purchase plan"
+    },
+    {
+        "Acronym": "ESS",
+        "Description": "Employee self service"
+    },
+    {
+        "Acronym": "ESVS",
+        "Description": "Enhanced special services"
+    },
+    {
+        "Acronym": "FAST",
+        "Description": "Forecast scheduling tool"
+    },
+    {
+        "Acronym": "FES",
+        "Description": "Front end supervisor"
+    },
+    {
+        "Acronym": "asd",
+        "Description": "more standard test data"
+    },
+    {
+        "Acronym": "HOMER",
+        "Description": "Homer D. Poe"
+    },
+    {
+        "Acronym": "OCC",
+        "Description": "Operations Command Center"
+    },
+    {
+        "Acronym": "HRS",
+        "Description": "Home Renovation Services; Hours - A duration of time measured in hours."
+    },
+    {
+        "Acronym": "DAO",
+        "Description": "In computer software, a data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanism."
+    },
+    {
+        "Acronym": "DOA",
+        "Description": "Dead On Arrival"
+    },
+    {
+        "Acronym": "SPM",
+        "Description": "Service Provider Management"
+    },
+    {
+        "Acronym": "CRM",
+        "Description": "Customer Relationship Management"
+    },
+    {
+        "Acronym": "B2B",
+        "Description": "Business to Business"
+    },
+    {
+        "Acronym": "CCPA",
+        "Description": "California Consumer Privacy Act"
+    },
+    {
+        "Acronym": "IETF",
+        "Description": "Internet Engineering Task Force - The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet."
+    },
+    {
+        "Acronym": "FPA",
+        "Description": "Forced Placed Announcement; A recording placed over a phone queue to alert callers of issues affecting large segments of the environment."
+    },
+    {
+        "Acronym": "EDEI",
+        "Description": "System-Subsystem for ELECTRONIC DATA INTERCHANGE-BASE TABLES"
+    },
+    {
+        "Acronym": "SVOC",
+        "Description": "Single View of Customer. Restful web services that resides on the store (STORESVOC) and on the Host (Central Tomcat Grid) that use DB2 to maintain THD customer data. Currently in Production for PRO customer data."
+    },
+    {
+        "Acronym": "IEFT",
+        "Description": "Internet Engineering Task Force"
+    },
+    {
+        "Acronym": "ADD ASM",
+        "Description": "Assistant Skills Manager"
+    },
+    {
+        "Acronym": "PCF",
+        "Description": "Pivotal Cloud Factory"
+    }
+]

@@ -1,0 +1,29 @@
+{
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "version": "0.1",
+          "subscriptionkey": "ab20d3963be84f06b484a9c3343cc5aa",
+          "region": "eastus",
+          "name": "Homer-TestRun2-O365HealthSkillen-us_General",
+          "id": "General",
+          "authoringkey": "aa30c908945d453ab5ca7f5accbf912f",
+          "endpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "35cd3916-d395-4fc2-9d7f-2f146b7d12e8"
+        },
+        {
+          "version": "0.1",
+          "subscriptionkey": "ab20d3963be84f06b484a9c3343cc5aa",
+          "region": "eastus",
+          "name": "Homer-TestRun2-O365HealthSkillen-us_HDO365HealthStatus",
+          "id": "HDO365HealthStatus",
+          "authoringkey": "aa30c908945d453ab5ca7f5accbf912f",
+          "endpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "739733ae-192a-4052-a54c-c965f597b0be"
+        }
+      ]
+    }
+  },
+  "defaultLocale": "en-us"
+}

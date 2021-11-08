@@ -1,0 +1,90 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "wrap": true,
+            "text": "**Help Commands**"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "text": "**Weather:**"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${WeatherhelpCommands}",
+                    "wrap": true,
+                    "id": "txtweather"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "**Office 365 Health Status**",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${ServicenowhelpCommands}",
+                    "wrap": true
+                },
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "**Pager Help**",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${PagerhelpCommands}",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "**Department Help**",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "text": "${DepartmenthelpCommands}"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "**Weather Help**",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "text": "${WeatherhelpCommands}"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}

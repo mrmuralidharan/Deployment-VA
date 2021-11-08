@@ -1,0 +1,11 @@
+﻿> ------------ Activity templates ------------
+
+# HealthCheckMessage
+[Activity
+    Text = ${HealthCheckText()}
+    InputHint = expectingInput
+]
+> ------------ Text templates ------------
+
+# HealthCheckText
+- Office 365 Health Status

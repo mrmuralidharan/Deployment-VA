@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDO365HealthStatus", "HDO365HealthStatus\HDO365HealthStatus\HDO365HealthStatus.csproj", "{3F7C8A23-537C-4AED-9143-54AAFBEF2568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDO365HealthStatus.Tests", "HDO365HealthStatus\HDO365HealthStatus.Tests\HDO365HealthStatus.Tests.csproj", "{F1F39B93-62B7-467A-AC71-9B8354F1F536}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7C8A23-537C-4AED-9143-54AAFBEF2568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7C8A23-537C-4AED-9143-54AAFBEF2568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7C8A23-537C-4AED-9143-54AAFBEF2568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7C8A23-537C-4AED-9143-54AAFBEF2568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F39B93-62B7-467A-AC71-9B8354F1F536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F39B93-62B7-467A-AC71-9B8354F1F536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F39B93-62B7-467A-AC71-9B8354F1F536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F39B93-62B7-467A-AC71-9B8354F1F536}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DCA462B-6A51-4CC2-9F34-980ADAA78B34}
+	EndGlobalSection
+EndGlobal

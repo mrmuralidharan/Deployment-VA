@@ -1,0 +1,124 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json",
+  "$id": "HDHelpSkill",
+  "name": "HDHelpSkill",
+  "description": "HDHelpSkill description",
+  "publisherName": "Your Company",
+  "version": "1.1",
+  "iconUrl": "https://homer-uat-helpskill-gwzxult.azurewebsites.net//HDHelpSkill.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://homer-uat-helpskill-gwzxult.azurewebsites.net//privacy.html",
+  "tags": [
+    "sample",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the HDHelpSkill",
+      "endpointUrl": "https://homer-testrun2-helpskill-uftkk2b.azurewebsites.net/api/messages",
+      "msAppId": "fe9b82b7-61e6-4139-9d79-d347e6d121f3"
+    }
+  ],
+  "dispatchModels": {
+    "languages": {
+      "en-us": [
+        {
+          "id": "HDHelpSkillLuModel-en",
+          "name": "HDHelpSkill LU (English)",
+          "contentType": "application/lu",
+          "url": "file://HDHelpSkill.lu",
+          "description": "English language model for the skill"
+        }
+      ],
+      "de-de": [
+        {
+          "id": "HDHelpSkillLuModel-de",
+          "name": "HDHelpSkill LU (German)",
+          "contentType": "application/lu",
+          "url": "file://HDHelpSkill.lu",
+          "description": "German language model for the skill"
+        }
+      ],
+      "es-es": [
+        {
+          "id": "HDHelpSkillLuModel-es",
+          "name": "HDHelpSkill LU (Spanish)",
+          "contentType": "application/lu",
+          "url": "file://HDHelpSkill.lu",
+          "description": "Spanish language model for the skill"
+        }
+      ],
+      "fr-fr": [
+        {
+          "id": "HDHelpSkillLuModel-fr",
+          "name": "HDHelpSkill LU (French)",
+          "contentType": "application/lu",
+          "url": "file://HDHelpSkill.lu",
+          "description": "French language model for the skill"
+        }
+      ],
+      "it-it": [
+        {
+          "id": "HDHelpSkillLuModel-it",
+          "name": "HDHelpSkill LU (Italian)",
+          "contentType": "application/lu",
+          "url": "file://HDHelpSkill.lu",
+          "description": "Italian language model for the skill"
+        }
+      ],
+      "zh-cn": [
+        {
+          "id": "HDHelpSkillLuModel-zh",
+          "name": "HDHelpSkill LU (Chinese)",
+          "contentType": "application/lu",
+          "url": "file://HDHelpSkill.lu",
+          "description": "Chinese language model for the skill"
+        }
+      ]
+    },
+    "intents": {
+      "Sample": "#/activities/message",
+      "*": "#/activities/message"
+    }
+  },
+  "activities": {
+    "sampleAction": {
+      "description": "Sample action which accepts an input object and returns an object back.",
+      "type": "event",
+      "name": "SampleAction",
+      "value": {
+        "$ref": "#/definitions/inputObject"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/responseObject"
+      }
+    },
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    }
+  },
+  "definitions": {
+    "inputObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The users name."
+        }
+      }
+    },
+    "responseObject": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer",
+          "description": "A customer identifier."
+        }
+      }
+    }
+  }
+}

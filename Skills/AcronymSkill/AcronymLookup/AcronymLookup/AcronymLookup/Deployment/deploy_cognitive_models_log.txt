@@ -1,0 +1,1 @@
+AZ CLI passes minimum version. Current version is 2.26.0

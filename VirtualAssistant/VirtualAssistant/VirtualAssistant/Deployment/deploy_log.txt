@@ -1,0 +1,499 @@
+{
+  "error": null,
+  "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Resources/deployments/template",
+  "name": "template",
+  "properties": {
+    "correlationId": "32accd2a-ca7a-4ebc-9f11-ebefd77ffc49",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.DocumentDB/databaseAccounts/vasssss",
+            "resourceGroup": "hdhomere",
+            "resourceName": "vasssss",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.DocumentDB/databaseAccounts/vasssss/sqlDatabases/botstate-db",
+        "resourceGroup": "hdhomere",
+        "resourceName": "vasssss/botstate-db",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Web/serverfarms/vasssss",
+            "resourceGroup": "hdhomere",
+            "resourceName": "vasssss",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Web/sites/vasssss",
+        "resourceGroup": "hdhomere",
+        "resourceName": "vasssss",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Web/sites/vasssss",
+            "resourceGroup": "hdhomere",
+            "resourceName": "vasssss",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Insights/components/vasssss",
+            "resourceGroup": "hdhomere",
+            "resourceName": "vasssss",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.BotService/botServices/vasssss",
+        "resourceGroup": "hdhomere",
+        "resourceName": "vasssss",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.CognitiveServices/accounts/vasssss-luisprediction",
+            "resourceGroup": "hdhomere",
+            "resourceName": "vasssss-luisprediction",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.CognitiveServices/accounts/vasssss-luisauthoring",
+        "resourceGroup": "hdhomere",
+        "resourceName": "vasssss-luisauthoring",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      }
+    ],
+    "duration": "PT0S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "vasssss-cm-boj7mao"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbDatabaseName": {
+        "type": "String",
+        "value": "botstate-db"
+      },
+      "cosmosDbDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "vasssss-luisauthoring"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisPredictionLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisPredictionName": {
+        "type": "String",
+        "value": "vasssss-luisprediction"
+      },
+      "luisPredictionSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "3de25838-8096-43fc-a3d9-6cae7a3562b0"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "vasitant123#"
+      },
+      "name": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "vasssss-boj7mao"
+      },
+      "rgName": {
+        "type": "String",
+        "value": "hdhomere"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "vasssss"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "boj7mao"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus",
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "4718247249408299489",
+    "templateLink": null,
+    "timestamp": "2021-10-20T12:59:03.950675+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.DocumentDB/databaseAccounts/vasssss",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.DocumentDB/databaseAccounts/vasssss/sqlDatabases/botstate-db",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Storage/storageAccounts/vasssss",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Web/serverFarms/vasssss",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Insights/components/vasssss",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.Web/sites/vasssss",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.BotService/botServices/vasssss",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.CognitiveServices/accounts/vasssss-cm-boj7mao",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.CognitiveServices/accounts/vasssss-luisprediction",
+        "resourceGroup": "hdhomere"
+      },
+      {
+        "id": "/subscriptions/05a5503b-4807-43ec-95a3-caba00f3ba1f/resourceGroups/hdhomere/providers/Microsoft.CognitiveServices/accounts/vasssss-luisauthoring",
+        "resourceGroup": "hdhomere"
+      }
+    ]
+  },
+  "resourceGroup": "hdhomere",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "08508f73-942f-47a0-b7a4-9dc73a3e070c"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=vasssss;AccountKey=zW0vSkWnusm02M8n7aFjB6qSJcmqs/x033wGE46bhIQs6oYil/EOLHpJMMfpBPkAiQ1W3iuwtxbxDkDRujQPcQ==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "vasssss"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "9d6999b5256c4bba881359b9f81012b9"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "YaIusQ1lgnG6YgVe1X8FesDE2XG0NfTxWKGTui0G8wOyur8gcJbjmoM3xAhsbSGJdK08TU24ws0B6pBmwcba3g==",
+      "containerId": "vasssss-state",
+      "cosmosDBEndpoint": "https://vasssss.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "authoringEndpoint": "https://vasssss-luisauthoring.cognitiveservices.azure.com/",
+      "authoringKey": "0a4ff06656fd48d59d8a0e3c8c5623c8",
+      "authoringRegion": "westus",
+      "predictionAccountName": "vasssss-luisprediction",
+      "predictionKey": "2f6155a26563434fb1ff965cd43e8bfc",
+      "predictionRegion": "eastus"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "hdhomere"
+  }
+}

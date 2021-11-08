@@ -1,0 +1,57 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "**Create Pagerduty Incident**",
+            "wrap": true,
+            "size": "Large"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Escalation Policy Group",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Placeholder text",
+            "id": "txtesc",
+            "value": "${policyname} -${id} ",
+            "$data": "${Policies}"
+        },
+        {
+            "type": "TextBlock",
+            "wrap": true,
+            "text": "Short Description:"
+        },
+        {
+            "type": "Input.Text",
+            "id": "txttitle",
+            "placeholder": "Title"
+        },
+        {
+            "type": "TextBlock",
+            "wrap": true,
+            "text": "Describe Why you're Paging this team"
+        },
+        {
+            "type": "Input.Text",
+            "id": "txtdesc",
+            "placeholder": "Placeholder text"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Provide System,Error Codes,Business Impact and a way to contact you once we recieve the alert.",
+            "wrap": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Page",
+            "style": "positive"
+        }
+    ]
+}

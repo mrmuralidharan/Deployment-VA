@@ -1,0 +1,29 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "id": "General",
+          "authoringkey": "df464aa2c07a44fa964deb185edea15b",
+          "subscriptionkey": "a478162f9b1e40958deaee6f1b370381",
+          "name": "HDPageren-us_General",
+          "region": "eastus",
+          "endpoint": "https://hdvapager-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "be66741b-54e2-4ba4-a6cb-f10ceeb92d03",
+          "version": "0.1"
+        },
+        {
+          "id": "HDPagerSkill",
+          "authoringkey": "df464aa2c07a44fa964deb185edea15b",
+          "subscriptionkey": "a478162f9b1e40958deaee6f1b370381",
+          "name": "HDPageren-us_HDPagerSkill",
+          "region": "eastus",
+          "endpoint": "https://hdvapager-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "504fdc04-29d4-437a-8df1-0a63fa415e71",
+          "version": "0.1"
+        }
+      ]
+    }
+  }
+}

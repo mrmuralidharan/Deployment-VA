@@ -1,0 +1,28 @@
+Microsoft (R) Build Engine version 16.9.0+57a23d249 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2021-10-20T11:22:44.7786237Z",
+  "id": "0b422be7b03d497299150ea7681e6fc6",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2021-10-20T11:22:44.7786237Z",
+  "log_url": "https://hdpager-aznblrb.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2021-10-20T11:22:41.7490428Z",
+  "site_name": "HDPager-aznblrb",
+  "start_time": "2021-10-20T11:22:41.8746415Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://hdpager-aznblrb.scm.azurewebsites.net/api/deployments/latest"
+}
+WARNING: Getting scm site credentials for zip deployment
+WARNING: Starting zip deployment. This operation can take a while to complete ...
+WARNING: Deployment endpoint responded with status code 202

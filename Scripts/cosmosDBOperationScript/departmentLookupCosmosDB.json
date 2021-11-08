@@ -1,0 +1,82 @@
+[
+    {
+        "deptName": "FRONTEND, FRONT END",
+        "deptNumber": "90",
+        "type": "Department"
+    },
+    {
+        "deptName": "LUMBER",
+        "deptNumber": "21",
+        "type": "Department"
+    },
+    {
+        "deptName": "BUILDING MATERIALS",
+        "deptNumber": "22",
+        "type": "Department"
+    },
+    {
+        "deptName": "FLOOR COVERING, WALL COVERING",
+        "deptNumber": "23",
+        "type": "Department"
+    },
+    {
+        "deptName": "PAINT",
+        "deptNumber": "24",
+        "type": "Department"
+    },
+    {
+        "deptName": "HARDWARE, TOOLS",
+        "deptNumber": "25",
+        "type": "Department"
+    },
+    {
+        "deptName": "PLUMBING",
+        "deptNumber": "26",
+        "type": "Department"
+    },
+    {
+        "deptName": "ELECTRICAL, LIGHTING",
+        "deptNumber": "27",
+        "type": "Department"
+    },
+    {
+        "deptName": "GARDEN, SEASONAL",
+        "deptNumber": "28",
+        "type": "Department"
+    },
+    {
+        "deptName": "BATH, KITCHEN, KITCHENS",
+        "deptNumber": "29",
+        "type": "Department"
+    },
+    {
+        "deptName": "MILLWORK",
+        "deptNumber": "30",
+        "type": "Department"
+    },
+    {
+        "deptName": "DECOR, STORAGE",
+        "deptNumber": "59",
+        "type": "Department"
+    },
+    {
+        "deptName": "APPLIANCES",
+        "deptNumber": "70",
+        "type": "Department"
+    },
+    {
+        "deptName": "RENTAL, REPAIR",
+        "deptNumber": "78",
+        "type": "Department"
+    },
+    {
+        "deptName": "BACK OFFICE",
+        "deptNumber": "91",
+        "type": "Department"
+    },
+    {
+        "deptName": "BACKEND, BACK END, RECEIVING",
+        "deptNumber": "93",
+        "type": "Department"
+    }
+]

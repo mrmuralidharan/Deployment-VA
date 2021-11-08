@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.0/skill-manifest.json",
+  "$id": "HDPagerSkill",
+  "name": "HDPagerSkill",
+  "description": "HDPagerSkill description",
+  "publisherName": "Your Company",
+  "version": "1.0",
+  "iconUrl": "https://pagerskill-7xcyzii.azurewebsites.net/HDPagerSkill.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://pagerskill-7xcyzii.azurewebsites.net/privacy.html",
+  "tags": [
+    "sample",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the HDPagerSkill",
+      "endpointUrl": "https://pagerskill-7xcyzii.azurewebsites.net/api/messages",
+      "msAppId": "dc3a779f-76f0-49b0-8406-c0f70743fb91"
+    }
+  ],
+  "activities": {
+    "sampleAction": {
+      "description": "Sample action which accepts an input object and returns an object back.",
+      "type": "event",
+      "name": "SampleAction",
+      "value": {
+        "$ref": "#/definitions/inputObject"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/responseObject"
+      }
+    },
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    }
+  },
+  "definitions": {
+    "inputObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The users name."
+        }
+      }
+    },
+    "responseObject": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer",
+          "description": "A customer identifier."
+        }
+      }
+    }
+  }
+}

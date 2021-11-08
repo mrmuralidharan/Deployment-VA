@@ -1,0 +1,16 @@
+﻿> ------------ Activity templates ------------
+
+# HelpOutputresponse
+[Activity
+    Text = ${HelpOutput()}
+     InputHint = acceptingInput
+]
+
+
+
+> ------------ Text templates ------------
+
+
+
+# HelpOutput
+- ${Response}

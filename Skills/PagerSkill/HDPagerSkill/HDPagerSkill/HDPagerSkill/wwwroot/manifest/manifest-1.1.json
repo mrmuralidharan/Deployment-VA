@@ -1,0 +1,124 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json",
+  "$id": "HDPagerSkill",
+  "name": "HDPagerSkill",
+  "description": "HDPagerSkill description",
+  "publisherName": "Your Company",
+  "version": "1.1",
+  "iconUrl": "https://hdpager-aznblrb.azurewebsites.net/HDPagerSkill.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://hdpager-aznblrb.azurewebsites.net/privacy.html",
+  "tags": [
+    "sample",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the HDPagerSkill",
+      "endpointUrl": "https://hdpager-aznblrb.azurewebsites.net/api/messages",
+      "msAppId": "4191d9ee-3403-435e-b875-b4dcf919865f"
+    }
+  ],
+  "dispatchModels": {
+    "languages": {
+      "en-us": [
+        {
+          "id": "HDPagerSkillLuModel-en",
+          "name": "HDPagerSkill LU (English)",
+          "contentType": "application/lu",
+          "url": "file://HDPagerSkill.lu",
+          "description": "English language model for the skill"
+        }
+      ],
+      "de-de": [
+        {
+          "id": "HDPagerSkillLuModel-de",
+          "name": "HDPagerSkill LU (German)",
+          "contentType": "application/lu",
+          "url": "file://HDPagerSkill.lu",
+          "description": "German language model for the skill"
+        }
+      ],
+      "es-es": [
+        {
+          "id": "HDPagerSkillLuModel-es",
+          "name": "HDPagerSkill LU (Spanish)",
+          "contentType": "application/lu",
+          "url": "file://HDPagerSkill.lu",
+          "description": "Spanish language model for the skill"
+        }
+      ],
+      "fr-fr": [
+        {
+          "id": "HDPagerSkillLuModel-fr",
+          "name": "HDPagerSkill LU (French)",
+          "contentType": "application/lu",
+          "url": "file://HDPagerSkill.lu",
+          "description": "French language model for the skill"
+        }
+      ],
+      "it-it": [
+        {
+          "id": "HDPagerSkillLuModel-it",
+          "name": "HDPagerSkill LU (Italian)",
+          "contentType": "application/lu",
+          "url": "file://HDPagerSkill.lu",
+          "description": "Italian language model for the skill"
+        }
+      ],
+      "zh-cn": [
+        {
+          "id": "HDPagerSkillLuModel-zh",
+          "name": "HDPagerSkill LU (Chinese)",
+          "contentType": "application/lu",
+          "url": "file://HDPagerSkill.lu",
+          "description": "Chinese language model for the skill"
+        }
+      ]
+    },
+    "intents": {
+      "Sample": "#/activities/message",
+      "*": "#/activities/message"
+    }
+  },
+  "activities": {
+    "sampleAction": {
+      "description": "Sample action which accepts an input object and returns an object back.",
+      "type": "event",
+      "name": "SampleAction",
+      "value": {
+        "$ref": "#/definitions/inputObject"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/responseObject"
+      }
+    },
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    }
+  },
+  "definitions": {
+    "inputObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The users name."
+        }
+      }
+    },
+    "responseObject": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer",
+          "description": "A customer identifier."
+        }
+      }
+    }
+  }
+}

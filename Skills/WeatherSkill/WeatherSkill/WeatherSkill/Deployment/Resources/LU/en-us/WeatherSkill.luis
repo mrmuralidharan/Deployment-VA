@@ -1,0 +1,1680 @@
+{
+  "intents": [
+    {
+      "name": "ForecastWeather"
+    },
+    {
+      "name": "CheckWeatherValue"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "postalCode",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "forecast atlanta",
+      "intent": "ForecastWeather",
+      "entities": []
+    },
+    {
+      "text": "forecast 999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "forecast A999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "forecast 9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "forecast 96898",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "forecast A9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "forecast AA 99",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "forecast 99999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "forecast 99-999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "forecast 99 999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "forecast 999 99",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "forecast AA9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "forecast 999999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "forecast AAA9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AA-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AAAAA99",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AA9 9AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast 9999999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast A9A 9A9",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast 9999 AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AA99999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AA 9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast 9999 AW",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AI-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "forecast AAAA 1AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast 9999-999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast AAA9 1AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast A9990000",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast AAA 9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast 999-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast AA99 9AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast AAAA 9AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast AA9-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast A9999AAA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "forecast 99999-999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "forecast 99999-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 9,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at atlanta",
+      "intent": "ForecastWeather",
+      "entities": []
+    },
+    {
+      "text": "forecast weather at 999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at A999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 96898",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at A9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA 99",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 99999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 99-999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 99 999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 999 99",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 999999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AAA9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AAAAA99",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA9 9AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 9999999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at A9A 9A9",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 9999 AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA99999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA 9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 9999 AW",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AI-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA99 9AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AAAA 1AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 9999-999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AAA9 1AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at A9990000",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AAA 9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 999-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AAAA 9AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA9-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at AA9A 1AA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at A9999AAA",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 99999-999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at 99999-9999",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 20,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "weather at shanghai",
+      "intent": "CheckWeatherValue",
+      "entities": []
+    },
+    {
+      "text": "weather atlanta",
+      "intent": "CheckWeatherValue",
+      "entities": []
+    },
+    {
+      "text": "weather 999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "weather A999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "weather 9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "weather 96898",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "weather A9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "weather AA 99",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "weather 99999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "weather 99-999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "weather 99 999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "weather 999 99",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "weather AA9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "weather 999999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "weather AAA9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AA-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AAAAA99",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AA9 9AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather 9999999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather A9A 9A9",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather 9999 AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AA99999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AA 9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather 9999 AW",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AI-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather AA99 9AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather AAAA 1AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather 9999-999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather AAA9 1AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather A9990000",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather AAA 9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather 999-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather AAAA 9AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather AA9-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather AA9A 1AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather A9999AAA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather 99999-999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather 99999-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 8,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at 999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "weather at A999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather at 9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "weather at 96898",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather at A9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather at AA 99",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather at 99999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather at 99-999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather at 99 999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather at 999 99",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather at AA9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather at 999999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather at AAA9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AA-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AAAAA99",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AA9 9AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at 9999999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at A9A 9A9",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at 9999 AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AA99999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AA 9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at 9999 AW",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AI-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "weather at AAAA 1AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at 9999-999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at AAA9 1AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at A9990000",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at AAA 9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at 999-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at AA99 9AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at AAAA 9AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at AA9-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at AA9A 1AA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at A9999AAA",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather at 99999-999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "weather at 99999-9999",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "postalCode",
+          "startPos": 11,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "all of them",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want them all",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to all of them",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "forecast {geographyV2}",
+      "intent": "ForecastWeather"
+    },
+    {
+      "pattern": "forecast {postalCode}",
+      "intent": "ForecastWeather"
+    },
+    {
+      "pattern": "forecast weather at {geographyV2}",
+      "intent": "ForecastWeather"
+    },
+    {
+      "pattern": "forecast weather at {postalCode}",
+      "intent": "ForecastWeather"
+    },
+    {
+      "pattern": "weather at {geographyV2}",
+      "intent": "CheckWeatherValue"
+    },
+    {
+      "pattern": "weather {geographyV2}",
+      "intent": "CheckWeatherValue"
+    },
+    {
+      "pattern": "weather {postalCode}",
+      "intent": "CheckWeatherValue"
+    },
+    {
+      "pattern": "weather at {postalCode}",
+      "intent": "CheckWeatherValue"
+    }
+  ],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "geographyV2",
+      "roles": []
+    }
+  ],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "WeatherSkill",
+  "desc": "",
+  "culture": "en-us"
+}

@@ -1,0 +1,32 @@
+﻿> ------------ Activity templates ------------
+
+# DepartmentLookupMessage
+[Activity
+    Text = ${DepartmentLookupText()}
+    SuggestedActions = Help
+    InputHint = acceptingInput
+]
+
+# DeptInputMessage
+[Activity
+    Text = ${DeptInputText()}
+    InputHint = acceptingInput
+]
+
+# DeptLookupResponseMessage
+[Activity
+    Text=${DeptLookupResponse()}
+    InputHint = acceptingInput
+]
+
+
+> ------------ Text templates ------------
+
+# DepartmentLookupText
+- Welcome to store department lookup skill!
+
+# DeptInputText
+- Which department your looking for?
+
+# DeptLookupResponse
+- ${Response}

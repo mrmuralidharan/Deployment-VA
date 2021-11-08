@@ -1,0 +1,273 @@
+{
+  "intents": [
+    {
+      "name": "Sample"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "EscalationPolicy"
+    },
+    {
+      "name": "Test"
+    },
+    {
+      "name": "CreatePolicy"
+    },
+    {
+      "name": "MembersDisplay"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Members",
+      "roles": []
+    },
+    {
+      "name": "PolicyName",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "demo dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Test dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Run dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "run sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Show OnCall",
+      "intent": "EscalationPolicy",
+      "entities": []
+    },
+    {
+      "text": "Pager Policy List",
+      "intent": "EscalationPolicy",
+      "entities": []
+    },
+    {
+      "text": "EscalationPolicy",
+      "intent": "EscalationPolicy",
+      "entities": []
+    },
+    {
+      "text": "policy",
+      "intent": "EscalationPolicy",
+      "entities": []
+    },
+    {
+      "text": "PagerPolicies",
+      "intent": "Test",
+      "entities": []
+    },
+    {
+      "text": "Page: LLC PagerDuty Admin",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "Page: SN:COM RE OPS L2-3 Direct",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "Page: SN:ITO UNIX L3",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Page: ADS Escalation esc",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "Page: NS_queue-ep",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "Page: Burrow Test Team Policy",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "Page: teams homer bot incident launch pad-ep",
+      "intent": "CreatePolicy",
+      "entities": [
+        {
+          "entity": "PolicyName",
+          "startPos": 6,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "Show me the members of LLC PagerDuty Admin",
+      "intent": "MembersDisplay",
+      "entities": [
+        {
+          "entity": "Members",
+          "startPos": 23,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "Members of SN:COM RE OPS L2-3 Direct",
+      "intent": "MembersDisplay",
+      "entities": [
+        {
+          "entity": "Members",
+          "startPos": 11,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "Show me the members of SN:COM RE OPS L2-3 Direct",
+      "intent": "MembersDisplay",
+      "entities": [
+        {
+          "entity": "Members",
+          "startPos": 23,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "Members of SN:ITO UNIX L3",
+      "intent": "MembersDisplay",
+      "entities": [
+        {
+          "entity": "Members",
+          "startPos": 11,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "Show me the members of SN:ITO UNIX L3",
+      "intent": "MembersDisplay",
+      "entities": [
+        {
+          "entity": "Members",
+          "startPos": 23,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "Members of LLC PagerDuty Admin",
+      "intent": "MembersDisplay",
+      "entities": [
+        {
+          "entity": "Members",
+          "startPos": 11,
+          "endPos": 29
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "Page: {PolicyName}",
+      "intent": "CreatePolicy"
+    },
+    {
+      "pattern": "Show me the members of {Members}",
+      "intent": "MembersDisplay"
+    },
+    {
+      "pattern": "Members of {Members}",
+      "intent": "MembersDisplay"
+    }
+  ],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "HDPageren-us_HDPagerSkill",
+  "desc": "",
+  "culture": "en-us"
+}

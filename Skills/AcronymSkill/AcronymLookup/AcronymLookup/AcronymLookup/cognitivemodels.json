@@ -1,0 +1,29 @@
+{
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "version": "0.1",
+          "subscriptionkey": "d7166a3246194bd992f668fa62b349c6",
+          "region": "eastus",
+          "name": "Homer-TestRun2-AcronymSkillen-us_AcronymLookup",
+          "id": "AcronymLookup",
+          "authoringkey": "aa30c908945d453ab5ca7f5accbf912f",
+          "endpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "aa6b5b51-734a-4c5d-b283-8c00c75c7abe"
+        },
+        {
+          "version": "0.1",
+          "subscriptionkey": "d7166a3246194bd992f668fa62b349c6",
+          "region": "eastus",
+          "name": "Homer-TestRun2-AcronymSkillen-us_General",
+          "id": "General",
+          "authoringkey": "aa30c908945d453ab5ca7f5accbf912f",
+          "endpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "82503f5d-50bf-4b0b-be69-4ef1650585b0"
+        }
+      ]
+    }
+  },
+  "defaultLocale": "en-us"
+}

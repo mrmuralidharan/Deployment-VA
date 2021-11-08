@@ -1,0 +1,29 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "authoringkey": "f1fa493e832145bca2f3a28ae087d23b",
+          "endpoint": "https://weatherskill-luisauthoring-7xcyzii.cognitiveservices.azure.com/",
+          "id": "General",
+          "appid": "6df192a6-70d4-4f4c-8c40-3408fbe5b747",
+          "version": "0.1",
+          "region": "eastus",
+          "name": "WeatherSkill-us_WeatherSkillen-us_General",
+          "subscriptionkey": "387fceedc1794dc0a10f516b162c6f12"
+        },
+        {
+          "authoringkey": "f1fa493e832145bca2f3a28ae087d23b",
+          "endpoint": "https://weatherskill-luisauthoring-7xcyzii.cognitiveservices.azure.com/",
+          "id": "WeatherSkill",
+          "appid": "8aefc419-3ef3-45d2-96d3-6e93b036f65e",
+          "version": "0.1",
+          "region": "eastus",
+          "name": "WeatherSkill-us_WeatherSkillen-us_WeatherSkill",
+          "subscriptionkey": "387fceedc1794dc0a10f516b162c6f12"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "error": null,
+  "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Resources/deployments/template",
+  "name": "template",
+  "properties": {
+    "correlationId": "82311380-74a2-4541-a988-405a308c637d",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.DocumentDB/databaseAccounts/homertestrun2va",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "homertestrun2va",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.DocumentDB/databaseAccounts/homertestrun2va/sqlDatabases/botstate-db",
+        "resourceGroup": "HD-Homer-3",
+        "resourceName": "homertestrun2va/botstate-db",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Web/serverfarms/Homer-TestRun2-VA",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-VA",
+            "resourceType": "Microsoft.Web/serverfarms"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2018-07-01",
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Storage/storageAccounts/homertestrun2va",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "homertestrun2va",
+            "resourceType": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.CognitiveServices/accounts/Homer-TestRun2-VA-luisauthoring",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-VA-luisauthoring",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.CognitiveServices/accounts/Homer-TestRun2-VA-luisauthoring",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-VA-luisauthoring",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.CognitiveServices/accounts/Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2015-04-08",
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.DocumentDB/databaseAccounts/homertestrun2va",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "homertestrun2va",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          },
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.DocumentDB/databaseAccounts/homertestrun2va",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "homertestrun2va",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          },
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Insights/components/Homer-TestRun2-VA",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-VA",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Web/sites/Homer-TestRun2-AcronymSkill-uftkk2b",
+        "resourceGroup": "HD-Homer-3",
+        "resourceName": "Homer-TestRun2-AcronymSkill-uftkk2b",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Web/sites/Homer-TestRun2-AcronymSkill-uftkk2b",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-AcronymSkill-uftkk2b",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Insights/components/Homer-TestRun2-VA",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-VA",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.BotService/botServices/Homer-TestRun2-AcronymSkill-uftkk2b",
+        "resourceGroup": "HD-Homer-3",
+        "resourceName": "Homer-TestRun2-AcronymSkill-uftkk2b",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.CognitiveServices/accounts/Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b",
+            "resourceGroup": "HD-Homer-3",
+            "resourceName": "Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.CognitiveServices/accounts/Homer-TestRun2-VA-luisauthoring",
+        "resourceGroup": "HD-Homer-3",
+        "resourceName": "Homer-TestRun2-VA-luisauthoring",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      }
+    ],
+    "duration": "PT0S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "Homer-TestRun2-VA"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "Homer-TestRun2-VA"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "Homer-TestRun2-AcronymSkill-uftkk2b"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "Homer-TestRun2-AcronymSkill-uftkk2b"
+      },
+      "cosmosDbDatabaseName": {
+        "type": "String",
+        "value": "botstate-db"
+      },
+      "cosmosDbDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "Homer-TestRun2-VA"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "Homer-TestRun2-VA-luisauthoring"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisPredictionLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisPredictionName": {
+        "type": "String",
+        "value": "Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b"
+      },
+      "luisPredictionSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "e678cdf7-92e9-49f1-9d48-603913fb8bda"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "acronym@123"
+      },
+      "name": {
+        "type": "String",
+        "value": "Homer-TestRun2-AcronymSkill"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "Homer-TestRun2-AcronymSkill-uftkk2b"
+      },
+      "rgName": {
+        "type": "String",
+        "value": "HD-Homer-3"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "Homer-TestRun2-VA"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "uftkk2b"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": false
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      },
+      "virtualAssistant": {
+        "type": "String",
+        "value": "Homer-TestRun2-VA"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "accounts",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "5121495827476327444",
+    "templateLink": null,
+    "timestamp": "2021-10-16T11:57:59.733214+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Resources/deployments/99ea37e6-a3e6-4102-a249-71c880607386",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.DocumentDB/databaseAccounts/homertestrun2va",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.DocumentDB/databaseAccounts/homertestrun2va/sqlDatabases/botstate-db",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Storage/storageAccounts/homertestrun2va",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Web/serverFarms/Homer-TestRun2-VA",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Insights/components/Homer-TestRun2-VA",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.Web/sites/Homer-TestRun2-AcronymSkill-uftkk2b",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.BotService/botServices/Homer-TestRun2-AcronymSkill-uftkk2b",
+        "resourceGroup": "HD-Homer-3"
+      },
+      {
+        "id": "/subscriptions/98590240-1726-40d9-a6ea-8fdc1fc448b3/resourceGroups/HD-Homer-3/providers/Microsoft.CognitiveServices/accounts/Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b",
+        "resourceGroup": "HD-Homer-3"
+      }
+    ]
+  },
+  "resourceGroup": "HD-Homer-3",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "49fe8793-81be-4788-91d9-a01b423169ab"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=homertestrun2va;AccountKey=C7OtJUBQ6kBegd5HtqTY42ozyGmFKEwVnSaak56ydZQhoWWv3JGjhppVZmeyS9KTpK0mdgSH5HaKaZT9cVyeQg==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "Homer-TestRun2-AcronymSkill-uftkk2b"
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "fLJ3pQbINdcA9CnjzQBSZq7G3gTJUASUOtrNjXTQuJXfxI7MoYfNCWyZQMj69HBVxVJJMrDjO3gNFu06OSe7gw==",
+      "containerId": "Homer-TestRun2-AcronymSkill-state",
+      "cosmosDBEndpoint": "https://homertestrun2va.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "authoringEndpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+      "authoringKey": "aa30c908945d453ab5ca7f5accbf912f",
+      "authoringRegion": "westus",
+      "predictionAccountName": "Homer-TestRun2-AcronymSkill-luisprediction-uftkk2b",
+      "predictionKey": "d7166a3246194bd992f668fa62b349c6",
+      "predictionRegion": "eastus"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "Homer-TestRun2-AcronymSkill"
+  }
+}

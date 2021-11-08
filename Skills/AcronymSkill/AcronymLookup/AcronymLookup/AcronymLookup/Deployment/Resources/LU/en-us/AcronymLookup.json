@@ -1,0 +1,975 @@
+{
+  "intents": [
+    {
+      "name": "Sample"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "AcronymLookup"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Operation",
+      "roles": []
+    },
+    {
+      "name": "Acronym",
+      "roles": []
+    },
+    {
+      "name": "Description",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "demo dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Test dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Run dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "run sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Add Acronym PCF with Internet Engineering Task Force - The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 237
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym MTC with Marietta Technology Center. Located at 2250 Newmarket Parkway, Marietta, GA 30067",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 101
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym DAO with In computer software, a data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanism.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 174
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym asd with more standard test data",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym HOMER with Homer D. Poe",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym WSL with Windows Subsystem for Linux",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym OCC with Operations Command Center",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym HRS with Home Renovation Services; Hours - A duration of time measured in hours.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 14
+        },
+        {
+          "entity": "Description",
+          "startPos": 21,
+          "endPos": 91
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym CCPA with California Consumer Privacy Act.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym LOWES with who",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym IIWII with It is what it is",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym FE3H with Fire Emblem Three Houses",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym SVOC with Single View of Customer.  Restful web services that resides on the store (STORESVOC) and on the Host (Central Tomcat Grid) that use DB2 to maintain THD customer data.  Currently in Production for PRO customer data.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 235
+        }
+      ]
+    },
+    {
+      "text": "Add Acronym R52W with Rolling 52 Weeks",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym R52W with Rolling 52 Weeks",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym PCF with Internet Engineering Task Force - The mission of the IETF is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 238
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym MTC with Marietta Technology Center. Located at 2250 Newmarket Parkway, Marietta, GA 30067",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 102
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym DAO with Add Acronym DAO with In computer software, a data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanism.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 196
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym asd with more standard test data",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym HOMER with Homer D. Poe",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 17
+        },
+        {
+          "entity": "Description",
+          "startPos": 24,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym WSL with Windows Subsystem for Linux",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym OCC with Operations Command Center",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym HRS with Home Renovation Services; Hours - A duration of time measured in hours.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 15
+        },
+        {
+          "entity": "Description",
+          "startPos": 22,
+          "endPos": 92
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym CCPA with California Consumer Privacy Act.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym LOWES with who",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 17
+        },
+        {
+          "entity": "Description",
+          "startPos": 24,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym IIWII with It is what it is",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 17
+        },
+        {
+          "entity": "Description",
+          "startPos": 24,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym FE3H with Fire Emblem Three Houses",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "Edit Acronym SVOC with Single View of Customer.  Restful web services that resides on the store (STORESVOC) and on the Host (Central Tomcat Grid) that use DB2 to maintain THD customer data.  Currently in Production for PRO customer data.",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 13,
+          "endPos": 16
+        },
+        {
+          "entity": "Description",
+          "startPos": 23,
+          "endPos": 236
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym PCF",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym R52W",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym HOMER",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym CCPA",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym LOWES",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym IIWII",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym FE3H",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Delete Acronym SVOC",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Count Acronym",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup PCF",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup R52W",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup HOMER",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup CCPA",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup LOWES",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup IIWII",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup FE3H",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Acronym Lookup SVOC",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Acronym",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Teach me an Acronym",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "Teach me a Acronym",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "Teach me Acronym",
+      "intent": "AcronymLookup",
+      "entities": [
+        {
+          "entity": "Operation",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Homer-TestRun2-AcronymSkillen-us_AcronymLookup",
+  "desc": "",
+  "culture": "en-us"
+}

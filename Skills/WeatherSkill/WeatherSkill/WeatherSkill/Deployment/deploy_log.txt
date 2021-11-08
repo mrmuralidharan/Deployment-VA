@@ -1,0 +1,523 @@
+{
+  "error": null,
+  "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Resources/deployments/template",
+  "name": "template",
+  "properties": {
+    "correlationId": "1b030e7c-7ad0-45c0-bcc8-903c5767aeb7",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.DocumentDB/databaseAccounts/skilltestrun2va",
+            "resourceGroup": "Skill",
+            "resourceName": "skilltestrun2va",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.DocumentDB/databaseAccounts/skilltestrun2va/sqlDatabases/botstate-db",
+        "resourceGroup": "Skill",
+        "resourceName": "skilltestrun2va/botstate-db",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Web/serverfarms/Skill-TestRun2-VA",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-VA",
+            "resourceType": "Microsoft.Web/serverfarms"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2018-07-01",
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Storage/storageAccounts/skilltestrun2va",
+            "resourceGroup": "Skill",
+            "resourceName": "skilltestrun2va",
+            "resourceType": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.CognitiveServices/accounts/Skill-TestRun2-VA-luisauthoring",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-VA-luisauthoring",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.CognitiveServices/accounts/Skill-TestRun2-VA-luisauthoring",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-VA-luisauthoring",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2016-02-01-preview",
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.CognitiveServices/accounts/Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "actionName": "listKeys",
+            "apiVersion": "2015-04-08",
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.DocumentDB/databaseAccounts/skilltestrun2va",
+            "resourceGroup": "Skill",
+            "resourceName": "skilltestrun2va",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          },
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.DocumentDB/databaseAccounts/skilltestrun2va",
+            "resourceGroup": "Skill",
+            "resourceName": "skilltestrun2va",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          },
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Insights/components/Skill-TestRun2-VA",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-VA",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Web/sites/Skill-TestRun2-WeatherSkill-lc5zedx",
+        "resourceGroup": "Skill",
+        "resourceName": "Skill-TestRun2-WeatherSkill-lc5zedx",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Web/sites/Skill-TestRun2-WeatherSkill-lc5zedx",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-WeatherSkill-lc5zedx",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Insights/components/Skill-TestRun2-VA",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-VA",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.BotService/botServices/Skill-TestRun2-WeatherSkill-lc5zedx",
+        "resourceGroup": "Skill",
+        "resourceName": "Skill-TestRun2-WeatherSkill-lc5zedx",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.CognitiveServices/accounts/Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx",
+            "resourceGroup": "Skill",
+            "resourceName": "Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.CognitiveServices/accounts/Skill-TestRun2-VA-luisauthoring",
+        "resourceGroup": "Skill",
+        "resourceName": "Skill-TestRun2-VA-luisauthoring",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      }
+    ],
+    "duration": "PT0S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "Skill-TestRun2-VA"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "Skill-TestRun2-VA"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "Skill-TestRun2-WeatherSkill-lc5zedx"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "Skill-TestRun2-WeatherSkill-lc5zedx"
+      },
+      "cosmosDbDatabaseName": {
+        "type": "String",
+        "value": "botstate-db"
+      },
+      "cosmosDbDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "Skill-TestRun2-VA"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "Skill-TestRun2-VA-luisauthoring"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisPredictionLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisPredictionName": {
+        "type": "String",
+        "value": "Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx"
+      },
+      "luisPredictionSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "d595c693-3cc6-4519-83c5-b1dea25faed2"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "weather@123"
+      },
+      "name": {
+        "type": "String",
+        "value": "Skill-TestRun2-WeatherSkill"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "Skill-TestRun2-WeatherSkill-lc5zedx"
+      },
+      "rgName": {
+        "type": "String",
+        "value": "Skill"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "Skill-TestRun2-VA"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "lc5zedx"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": false
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      },
+      "virtualAssistant": {
+        "type": "String",
+        "value": "Skill-TestRun2-VA"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "accounts",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "3358504944622188415",
+    "templateLink": null,
+    "timestamp": "2021-10-19T08:38:47.025761+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Resources/deployments/99ea37e6-a3e6-4102-a249-71c880607386",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.DocumentDB/databaseAccounts/skilltestrun2va",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.DocumentDB/databaseAccounts/skilltestrun2va/sqlDatabases/botstate-db",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Storage/storageAccounts/skilltestrun2va",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Web/serverFarms/Skill-TestRun2-VA",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Insights/components/Skill-TestRun2-VA",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.Web/sites/Skill-TestRun2-WeatherSkill-lc5zedx",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.BotService/botServices/Skill-TestRun2-WeatherSkill-lc5zedx",
+        "resourceGroup": "Skill"
+      },
+      {
+        "id": "/subscriptions/e04f5e6a-703e-4a01-be09-15f2f8801614/resourceGroups/Skill/providers/Microsoft.CognitiveServices/accounts/Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx",
+        "resourceGroup": "Skill"
+      }
+    ]
+  },
+  "resourceGroup": "Skill",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "1e96d9f0-a3b8-461f-a060-6e3f713bc264"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=skilltestrun2va;AccountKey=5oM+C/5TVEdiPfEJ7Ig+e8J+Ywne1iM/qM+p8ezPX2uxth+B7zFxkoWoK6pOpQchVVx8Rsc7fqzehzYMHKGdEw==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "Skill-TestRun2-WeatherSkill-lc5zedx"
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "DET60xUIG0b8PdUN8KhaLMxgmjLJrr0qKnhZWJnqcdnIRSLJkGKjwY64tnjMHEspGl2vd519JV86bD7yTv7Upg==",
+      "containerId": "Skill-TestRun2-WeatherSkill-state",
+      "cosmosDBEndpoint": "https://skilltestrun2va.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "authoringEndpoint": "https://skill-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+      "authoringKey": "a8be67dfc9aa4f479f37f13b60b5c0fd",
+      "authoringRegion": "westus",
+      "predictionAccountName": "Skill-TestRun2-WeatherSkill-luisprediction-lc5zedx",
+      "predictionKey": "7d44e3d380114b0c987d1ab1cf90dfc8",
+      "predictionRegion": "eastus"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "Skill-TestRun2-WeatherSkill"
+  }
+}

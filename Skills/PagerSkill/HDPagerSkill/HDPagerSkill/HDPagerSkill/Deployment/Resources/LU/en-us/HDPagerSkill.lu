@@ -1,0 +1,50 @@
+﻿# Sample
+- sample dialog
+- demo dialog
+- Test dialog
+- Run dialog
+- run sample dialog
+
+# None
+- hi
+- hello
+- logout
+- goodbye
+
+
+#EscalationPolicy
+-Show OnCall
+-Pager Policy List
+-EscalationPolicy
+-policy
+
+#Test
+-PagerPolicies
+
+#CreatePolicy
+- Page: {PolicyName}
+- Page: {PolicyName =LLC PagerDuty Admin}
+- Page: {PolicyName =SN:COM RE OPS L2-3 Direct}
+- Page: {PolicyName =SN:ITO UNIX L3}
+- Page: {PolicyName =ADS Escalation esc}
+- Page: {PolicyName =NS_queue-ep}
+- Page: {PolicyName =Burrow Test Team Policy}
+- Page: {PolicyName =teams homer bot incident launch pad-ep}
+- Page: {PolicyName =NS_queue-ep}
+
+
+
+#MembersDisplay
+-Show me the members of {Members}
+-Show me the members of {Members =LLC PagerDuty Admin}
+-Members of {Members}
+-Members of {Members =SN:COM RE OPS L2-3 Direct}
+-Show me the members of {Members =SN:COM RE OPS L2-3 Direct}
+-Members of {Members =SN:ITO UNIX L3}
+-Show me the members of {Members =SN:ITO UNIX L3}
+-Members of {Members =LLC PagerDuty Admin}
+
+> # Entity definitions
+
+$Members:simple
+$PolicyName:simple

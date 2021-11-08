@@ -1,0 +1,30 @@
+{
+  "authoringRegion": "westus",
+  "culture": "en-us",
+  "hierarchical": true,
+  "useAllTrainingData": true,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "normalizeDiacritics": true,
+  "services": [
+    {
+      "intentName": "l_General",
+      "appId": "f0da314a-3b2c-41a9-88c2-7b849b999554",
+      "authoringKey": "df464aa2c07a44fa964deb185edea15b",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "hdVAPageren-us_General",
+      "id": "1"
+    }
+  ],
+  "serviceIds": [
+    "1"
+  ],
+  "appId": "0937c2aa-4028-42a4-99c4-df504806830d",
+  "authoringKey": "df464aa2c07a44fa964deb185edea15b",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "hdVAPageren-us_Dispatch"
+}

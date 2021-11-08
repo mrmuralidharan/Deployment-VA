@@ -1,0 +1,29 @@
+{
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "version": "0.1",
+          "subscriptionkey": "c3f42be3b4c445be950c46135d0aeff1",
+          "region": "eastus",
+          "name": "Homer-TestRun2-HelpSkillen-us_General",
+          "id": "General",
+          "authoringkey": "aa30c908945d453ab5ca7f5accbf912f",
+          "endpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "c2314ffe-96f1-4c21-aeed-7164c96cce49"
+        },
+        {
+          "version": "0.1",
+          "subscriptionkey": "c3f42be3b4c445be950c46135d0aeff1",
+          "region": "eastus",
+          "name": "Homer-TestRun2-HelpSkillen-us_HDHelpSkill",
+          "id": "HDHelpSkill",
+          "authoringkey": "aa30c908945d453ab5ca7f5accbf912f",
+          "endpoint": "https://homer-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "e935b2f8-da7e-49a2-a032-7f3febbaf152"
+        }
+      ]
+    }
+  },
+  "defaultLocale": "en-us"
+}

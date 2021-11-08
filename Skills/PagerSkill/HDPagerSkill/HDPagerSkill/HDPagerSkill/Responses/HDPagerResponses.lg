@@ -1,0 +1,24 @@
+﻿> ------------ Activity templates ------------
+
+# EscalationPolicy
+[Activity
+    Text = ${EscalationText()}
+    InputHint = acceptingInput
+]
+
+# IncidentCreation
+[Activity
+    Text = ${IncidentText()}
+    InputHint = acceptingInput
+]
+
+
+> ------------ Text templates ------------
+
+# EscalationText
+- group ,${policy}
+
+#IncidentText
+- Incident # ${number} has been successfully created.
+#HelpingText
+- Escalation Policy name was missing, please provide the intent with policy name.EX: Page:LLC PagerDuty admin.

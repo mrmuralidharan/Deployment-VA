@@ -1,0 +1,29 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en-us": {
+      "dispatchModel": {
+        "name": "vasssssen-us_Dispatch",
+        "authoringkey": "0a4ff06656fd48d59d8a0e3c8c5623c8",
+        "type": "dispatch",
+        "subscriptionkey": "2f6155a26563434fb1ff965cd43e8bfc",
+        "authoringRegion": "westus",
+        "region": "eastus",
+        "appid": "e3609028-1335-467c-8954-ab1200c59d96",
+        "version": "Dispatch"
+      },
+      "languageModels": [
+        {
+          "id": "General",
+          "authoringkey": "0a4ff06656fd48d59d8a0e3c8c5623c8",
+          "subscriptionkey": "2f6155a26563434fb1ff965cd43e8bfc",
+          "name": "vasssssen-us_General",
+          "region": "eastus",
+          "endpoint": "https://vasssss-luisauthoring.cognitiveservices.azure.com/",
+          "appid": "0449e937-3ac0-4504-9517-166f75345556",
+          "version": "0.1"
+        }
+      ]
+    }
+  }
+}

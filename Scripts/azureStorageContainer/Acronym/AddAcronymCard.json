@@ -1,0 +1,72 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "spacing": "Small",
+      "columns": [
+        {
+          "type": "Column",
+          "width": 1,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Successfully added new acronym",
+              "wrap": true,
+              "weight": "Bolder",
+              "isSubtle": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "spacing": "Small",
+      "columns": [
+        {
+          "type": "Column",
+          "width": 1,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Acronym",
+              "isSubtle": true,
+              "weight": "Bolder",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "spacing": "Small",
+              "wrap": true,
+              "text": "${Acronym}"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": 1,
+          "items": [
+            {
+              "type": "TextBlock",
+              "isSubtle": true,
+              "verticalAlignment": "Center",
+              "weight": "Bolder",
+              "wrap": true,
+              "text": "Meaning"
+            },
+            {
+              "type": "TextBlock",
+              "verticalAlignment": "Center",
+              "spacing": "Small",
+              "wrap": true,
+              "text": "${Description}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

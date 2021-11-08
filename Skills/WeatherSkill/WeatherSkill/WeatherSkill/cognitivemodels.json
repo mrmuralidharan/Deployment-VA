@@ -1,0 +1,29 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en-us": {
+      "languageModels": [
+        {
+          "endpoint": "https://skill-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "region": "eastus",
+          "version": "0.1",
+          "subscriptionkey": "7d44e3d380114b0c987d1ab1cf90dfc8",
+          "authoringkey": "a8be67dfc9aa4f479f37f13b60b5c0fd",
+          "name": "Skill-TestRun2-WeatherSkillen-us_General",
+          "appid": "9886ab62-1aaa-4b62-9dae-31e0577e4b7c",
+          "id": "General"
+        },
+        {
+          "endpoint": "https://skill-testrun2-va-luisauthoring.cognitiveservices.azure.com/",
+          "region": "eastus",
+          "version": "0.1",
+          "subscriptionkey": "7d44e3d380114b0c987d1ab1cf90dfc8",
+          "authoringkey": "a8be67dfc9aa4f479f37f13b60b5c0fd",
+          "name": "Skill-TestRun2-WeatherSkillen-us_WeatherSkill",
+          "appid": "5ca1989c-a8d4-428d-9c94-27efb20da8e7",
+          "id": "WeatherSkill"
+        }
+      ]
+    }
+  }
+}

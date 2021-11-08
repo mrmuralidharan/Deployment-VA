@@ -1,0 +1,124 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json",
+  "$id": "HDO365HealthStatus",
+  "name": "HDO365HealthStatus",
+  "description": "HDO365HealthStatus description",
+  "publisherName": "Your Company",
+  "version": "1.1",
+  "iconUrl": "https://homer-uat-skill0365healthstatus-n6nwjyh.azurewebsites.net/HDO365HealthStatus.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://homer-uat-skill0365healthstatus-n6nwjyh.azurewebsites.net/privacy.html",
+  "tags": [
+    "sample",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the HDO365HealthStatus",
+      "endpointUrl": "https://homer-uat-skill0365healthstatus-n6nwjyh.azurewebsites.net/api/messages",
+      "msAppId": "b18a0c13-43f7-43d4-9cc6-caa36f8910fa"
+    }
+  ],
+  "dispatchModels": {
+    "languages": {
+      "en-us": [
+        {
+          "id": "HDO365HealthStatusLuModel-en",
+          "name": "HDO365HealthStatus LU (English)",
+          "contentType": "application/lu",
+          "url": "file://HDO365HealthStatus.lu",
+          "description": "English language model for the skill"
+        }
+      ],
+      "de-de": [
+        {
+          "id": "HDO365HealthStatusLuModel-de",
+          "name": "HDO365HealthStatus LU (German)",
+          "contentType": "application/lu",
+          "url": "file://HDO365HealthStatus.lu",
+          "description": "German language model for the skill"
+        }
+      ],
+      "es-es": [
+        {
+          "id": "HDO365HealthStatusLuModel-es",
+          "name": "HDO365HealthStatus LU (Spanish)",
+          "contentType": "application/lu",
+          "url": "file://HDO365HealthStatus.lu",
+          "description": "Spanish language model for the skill"
+        }
+      ],
+      "fr-fr": [
+        {
+          "id": "HDO365HealthStatusLuModel-fr",
+          "name": "HDO365HealthStatus LU (French)",
+          "contentType": "application/lu",
+          "url": "file://HDO365HealthStatus.lu",
+          "description": "French language model for the skill"
+        }
+      ],
+      "it-it": [
+        {
+          "id": "HDO365HealthStatusLuModel-it",
+          "name": "HDO365HealthStatus LU (Italian)",
+          "contentType": "application/lu",
+          "url": "file://HDO365HealthStatus.lu",
+          "description": "Italian language model for the skill"
+        }
+      ],
+      "zh-cn": [
+        {
+          "id": "HDO365HealthStatusLuModel-zh",
+          "name": "HDO365HealthStatus LU (Chinese)",
+          "contentType": "application/lu",
+          "url": "file://HDO365HealthStatus.lu",
+          "description": "Chinese language model for the skill"
+        }
+      ]
+    },
+    "intents": {
+      "Sample": "#/activities/message",
+      "*": "#/activities/message"
+    }
+  },
+  "activities": {
+    "sampleAction": {
+      "description": "Sample action which accepts an input object and returns an object back.",
+      "type": "event",
+      "name": "SampleAction",
+      "value": {
+        "$ref": "#/definitions/inputObject"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/responseObject"
+      }
+    },
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    }
+  },
+  "definitions": {
+    "inputObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The users name."
+        }
+      }
+    },
+    "responseObject": {
+      "type": "object",
+      "properties": {
+        "customerId": {
+          "type": "integer",
+          "description": "A customer identifier."
+        }
+      }
+    }
+  }
+}

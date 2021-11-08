@@ -1,0 +1,228 @@
+{
+  "intents": [
+    {
+      "name": "Sample"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "DeptLookup"
+    }
+  ],
+  "entities": [
+    {
+      "name": "DeptDetail",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "demo dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Test dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Run dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "run sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "department PAINT?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "department backend?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "department back end?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "department 90",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 11,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "what department is PAINT?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "what department is backend?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "what department is back end?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what department is 90?",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "what department is HARDWARE",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what department is backend",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "what department is back end",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what department is 90",
+      "intent": "DeptLookup",
+      "entities": [
+        {
+          "entity": "DeptDetail",
+          "startPos": 19,
+          "endPos": 20
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "what department is {DeptDetail}?",
+      "intent": "DeptLookup"
+    },
+    {
+      "pattern": "what department is {DeptDetail}",
+      "intent": "DeptLookup"
+    },
+    {
+      "pattern": "department {DeptDetail}?",
+      "intent": "DeptLookup"
+    },
+    {
+      "pattern": "department {DeptDetail}",
+      "intent": "DeptLookup"
+    }
+  ],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Homer-TestRun2-DepartmentSkillen-us_DepartmentSkill",
+  "desc": "",
+  "culture": "en-us"
+}

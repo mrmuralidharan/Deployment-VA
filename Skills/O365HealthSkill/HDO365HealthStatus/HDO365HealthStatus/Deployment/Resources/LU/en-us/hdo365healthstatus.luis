@@ -1,0 +1,207 @@
+{
+  "intents": [
+    {
+      "name": "Sample"
+    },
+    {
+      "name": "HealthCheck"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "IncidentDetail",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "demo dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Test dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "Run dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "run sample dialog",
+      "intent": "Sample",
+      "entities": []
+    },
+    {
+      "text": "What's broken in Office 365",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "What's broken in O365",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "Office 365 Status",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "Office 365 health Status",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "Office 365 broken Status",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "O365 health Status",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "O365 Status",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "O365 broken Status",
+      "intent": "HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "Office 365 incident no EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 23,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "Office 365 incident EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "O365 incident no EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "O365 incident EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "Office 365 ticket no EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 21,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "Office 365 ticket EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 18,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "O365 ticket no EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "O365 ticket EX280618",
+      "intent": "HealthCheck",
+      "entities": [
+        {
+          "entity": "IncidentDetail",
+          "startPos": 12,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "HDO365HealthStatus",
+  "desc": "",
+  "culture": "en-us"
+}

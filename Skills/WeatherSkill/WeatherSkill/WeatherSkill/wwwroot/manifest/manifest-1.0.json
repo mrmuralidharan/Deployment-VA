@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
+  "$id": "WeatherSkill",
+  "name": "Weather Skill",
+  "description": "The Weather skill provides an example of displaying the current weather using AccuWeather.",
+  "publisherName": "Microsoft",
+  "version": "1.0",
+  "iconUrl": "https://{YOUR_SKILL_URL}/images/WeatherSkill.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://{YOUR_SKILL_URL}/privacy.html",
+  "tags": [
+    "weather",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the Weather Skill",
+      "endpointUrl": "https://cctest2-3vi6j6r.azurewebsites.net/api/messages",
+      "msAppId": "eca04f26-005f-45ba-8907-f7e9003e1570"
+    }
+  ],
+  "activities": {
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    },
+    "weatherForecast": {
+      "description": "Weather forecast in a Geography or Latitude & Longitude",
+      "type": "event",
+      "name": "WeatherForecast",
+      "value": {
+        "$ref": "#/definitions/locationInfo"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/actionResult"
+      }
+    }
+  },
+  "definitions": {
+    "locationInfo": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string",
+          "description": "A Geography name or its Latitude & Longitude(north and east are above zero). E.g., Beijing or 39.90,116.40."
+        }
+      }
+    },
+    "actionResult": {
+      "type": "object",
+      "properties": {
+        "actionSuccess": {
+          "type": "boolean",
+          "description": "result of action"
+        },
+        "summary": {
+          "type": "string",
+          "description": "weather summary for this location."
+        }
+      }
+    }
+  }
+}

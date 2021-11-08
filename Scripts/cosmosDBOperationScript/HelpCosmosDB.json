@@ -1,0 +1,10 @@
+[
+	{
+		"type": "Help",
+		"O365helpCommands": "_What's broken in Office 365_ , _Office 365 Status_ - Get current O365 service health incidents",
+		"PagerhelpCommands": "List Escalation Policies- will list all the escalation policy.#CreateIncident - creat incident with the escalation policy selected",
+		"ServicenowhelpCommands": "what's broken - Returns a list of open major incidents.#what was broken - Returns a list of major incidents closed in the last day.#what's changing - Returns a list of current changes.#INC1234567 - Any mention of an INC* ServiceNow incident record will return a summary and link to the ticket.#CHG1234567 - Any mention of a CHG* ServiceNow RFC record will return a summary and link to the request.#PRB1234567 - Return a ServiceNow problem record.#server <servername> - Returns ServiceNow CMDB record(s) for a server name query.#where is <item> - Returns ServiceNow location information for a configuration item.#product <product> - Returns ServiceNow CMDB record(s) for a THD Product.#changes <ci> - Returns ServiceNow change records for a CI (+/- 5 days).",
+		"DepartmenthelpCommands": "what department is Millwork - Returns the department number for Millwork is 30.#what department is 30 - Returns Department 30 is Millwork.",
+		"WeatherhelpCommands": "Weather <city> - Get the weather for a location.#forecast <city> - Get the 3 day forecast for a location."
+	}
+]

@@ -1,0 +1,3314 @@
+{
+  "intents": [
+    {
+      "name": "ChangeTemperatureUnit"
+    },
+    {
+      "name": "CheckWeatherTime"
+    },
+    {
+      "name": "ForecastWeather"
+    },
+    {
+      "name": "CheckWeatherValue"
+    },
+    {
+      "name": "GetWeatherAdvisory"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "QueryWeather"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Historic",
+      "roles": []
+    },
+    {
+      "name": "SuitableFor",
+      "roles": []
+    },
+    {
+      "name": "WeatherCondition",
+      "roles": []
+    },
+    {
+      "name": "WeatherRange",
+      "roles": []
+    },
+    {
+      "name": "CityCountry",
+      "roles": []
+    },
+    {
+      "name": "geographyV2City",
+      "roles": []
+    },
+    {
+      "name": "geographyV2Country",
+      "roles": []
+    }
+  ],
+  "composites": [
+    {
+      "name": "geoDetails",
+      "children": [
+        "geographyV2City",
+        "geographyV2Country"
+      ],
+      "roles": []
+    }
+  ],
+  "closedLists": [
+    {
+      "name": "AdditionalWeatherCondition",
+      "subLists": [
+        {
+          "canonicalForm": "direction",
+          "list": [
+            "directions"
+          ]
+        },
+        {
+          "canonicalForm": "fast",
+          "list": []
+        },
+        {
+          "canonicalForm": "power",
+          "list": []
+        },
+        {
+          "canonicalForm": "speed",
+          "list": [
+            "speeds"
+          ]
+        },
+        {
+          "canonicalForm": "strong",
+          "list": [
+            "strong",
+            "strong"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "WindDirectionUnit",
+      "subLists": [
+        {
+          "canonicalForm": "east",
+          "list": []
+        },
+        {
+          "canonicalForm": "north",
+          "list": []
+        },
+        {
+          "canonicalForm": "northeast",
+          "list": [
+            "north east"
+          ]
+        },
+        {
+          "canonicalForm": "northwest",
+          "list": [
+            "north west"
+          ]
+        },
+        {
+          "canonicalForm": "south",
+          "list": []
+        },
+        {
+          "canonicalForm": "southeast",
+          "list": [
+            "south east"
+          ]
+        },
+        {
+          "canonicalForm": "southwest",
+          "list": [
+            "south west"
+          ]
+        },
+        {
+          "canonicalForm": "west",
+          "list": []
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "back to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "bellevue temp in centigrade?",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "can i get that in celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "can i get that in kelvin",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "can i get the weather at celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "can you tell me in kelvin",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "can you tell me that in celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "change it from celsius to kelvin",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "change temperature back to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 7,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "change the temp back to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "change the temperature back to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "convert it in kelvin",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "i want to change the temp from celsius to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 21,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "i want to know the celsius temp",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 27,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "please change the temperature to celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 18,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "please help to switch to centigrade",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "please switch the temp to kelvin",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "switch it from celsius to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "switch the temperature unit from celsius to fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "switch to celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "tell me the temp in my house in centigrade",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "tell me the temperature outside in celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "what is the temp in london in fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "what is the temp of la in fahrenheit",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "what is the temperature in crewe in celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "what s the temperature in canada in celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "what s the temperature in grand fork canada in celsius",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "what the tempture of peking in kelvin",
+      "intent": "ChangeTemperatureUnit",
+      "entities": []
+    },
+    {
+      "text": "what's chicago's temperature in centigrade",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 17,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "what's the temp in beijing in centigrade",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "what's tomorrow's temperature in celsius?",
+      "intent": "ChangeTemperatureUnit",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 18,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "a good time to go to canada",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 2,
+          "endPos": 10
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "best day to visit peddlers village",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 0,
+          "endPos": 7
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "best days to visit disneyland",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 0,
+          "endPos": 8
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "best weather for blueberry growing",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 0,
+          "endPos": 11
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 17,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "can you tell me the coolest time in tokyo",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "coldest day in charlotte",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "coldest day in michigan michigan ever",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 10
+        },
+        {
+          "entity": "Historic",
+          "startPos": 33,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "coldest day on record for ohio ohio",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "coldest day on record in minnesota",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "coldest month in la",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "coolest month recorded in boston",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "could you tell me the best season to go to hongkong ever",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 22,
+          "endPos": 32
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 37,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "hottest day ever in massachusetts",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "hottest month in portland",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "hottest months in las vegas",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "hottest months in new york",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "i want to know the hottested day ever recorded in columbus",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 19,
+          "endPos": 27
+        },
+        {
+          "entity": "Historic",
+          "startPos": 29,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "tell me the best season to go to beijing",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 22
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 27,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "the best time of eat strawberries",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 4,
+          "endPos": 12
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 17,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "the coldest day ever recorded in paris",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 4,
+          "endPos": 10
+        },
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "the coldest time of last year",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 4,
+          "endPos": 10
+        },
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "the coldest time of the day in may",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 4,
+          "endPos": 10
+        },
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "the hottest month in playa del carmen",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 4,
+          "endPos": 10
+        },
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "the warmest season in peking",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 4,
+          "endPos": 10
+        },
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "warmest month in nanjing",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 0,
+          "endPos": 6
+        },
+        {
+          "entity": "Historic",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "weather hottest month los angeles",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 8,
+          "endPos": 14
+        },
+        {
+          "entity": "Historic",
+          "startPos": 16,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "what are the rainy months in puerto rico",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 17
+        },
+        {
+          "entity": "Historic",
+          "startPos": 19,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "what is the best season of beijing",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "what is the coldest day ever in los angeles",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "what is the hottest month in nashville nashville",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "what is the hottest month in new jersey usually",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "what is the hottest month in phoenix arizona",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "what is the hottest month of the year in jacksonville",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 24
+        },
+        {
+          "entity": "Historic",
+          "startPos": 33,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what is the hottest months in columbus",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "what is typically the hottest month in south pennsylvania",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 22,
+          "endPos": 28
+        },
+        {
+          "entity": "Historic",
+          "startPos": 30,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "what 's the coldest day of last winter in washington",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "what time is it going to snow today",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 25,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "what time is it going to snow tomorrow",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 25,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "what time is it gonna snow tomorrow",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 22,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "what time is it supposed to start raining in macks village",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 34,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "what time should it start snowing in khirgil today",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 26,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "what time will it snow tomorrow",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "when are the hottest months in florida",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 13,
+          "endPos": 19
+        },
+        {
+          "entity": "Historic",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when is it foggy in mesa",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "when is it going to rain at hyderabad",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "when is it going to rain at hyderabad india",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "when is it going to rain in middleton wisconsin",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "when is it going to rain today",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "when is it going to rain tomorrow",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "when is it going to snow next",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "when is it gonna rain in seattle",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "when is it gonna rain next",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "when is it gonna rain toady",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "when is it gonna snow today",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "when is it rainy season in hawaii",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "Historic",
+          "startPos": 17,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "when is it rainy season in london",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "Historic",
+          "startPos": 17,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "when is it supposed to rain again",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when is it supposed to rain here in escondido california",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when is it supposed to snow next",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when is it supposed to snow this year",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when is it supposed to start snowing",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "when is the best months to visit australia",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "Historic",
+          "startPos": 12,
+          "endPos": 22
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 27,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "when is the hottest month in fresno",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "when is the hottest month in minnesota",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "Historic",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "when is the rainy season ever recorded in chicago",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 16
+        },
+        {
+          "entity": "Historic",
+          "startPos": 18,
+          "endPos": 23
+        },
+        {
+          "entity": "Historic",
+          "startPos": 25,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "when is the uv index highest tomorrow",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 19
+        },
+        {
+          "entity": "WeatherRange",
+          "startPos": 21,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "when is the wind speed maximum tomorrow in new york?",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "WeatherRange",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "when s the next time it s gonna rain",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 32,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "when was the coolest month in august of houston",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 13,
+          "endPos": 19
+        },
+        {
+          "entity": "Historic",
+          "startPos": 21,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "when was the last time it rained in san diego",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "when will it going to snows tomorrow in san dimas municipality",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "when will it rain in wuxi",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "when will it rain this week",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "when will it rain this weekend",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "when will it snow sunday in municipio de berwyn",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "when will it start raining in city of san fernando",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "when will it start raining in tampa",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "when will london be snowy",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "when will we get minimum start raining this weekend",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 17,
+          "endPos": 23
+        },
+        {
+          "entity": "WeatherCondition",
+          "startPos": 31,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "when will we get most rain tomorrow",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 17,
+          "endPos": 20
+        },
+        {
+          "entity": "WeatherCondition",
+          "startPos": 22,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "which month is the lowest temperature in london",
+      "intent": "CheckWeatherTime",
+      "entities": [
+        {
+          "entity": "WeatherRange",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "WeatherCondition",
+          "startPos": 26,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "forecast atlanta",
+      "intent": "ForecastWeather",
+      "entities": []
+    },
+    {
+      "text": "forecast geographyV2 geographyV2",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 9,
+          "endPos": 19
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 21,
+          "endPos": 31
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 9,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "forecast dubai uae",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 9,
+          "endPos": 13
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 15,
+          "endPos": 17
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 9,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at atlanta",
+      "intent": "ForecastWeather",
+      "entities": []
+    },
+    {
+      "text": "forecast weather at geographyV2 geographyV2",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 20,
+          "endPos": 30
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 32,
+          "endPos": 42
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 20,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "forecast weather at dubai uae",
+      "intent": "ForecastWeather",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 20,
+          "endPos": 24
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 26,
+          "endPos": 28
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "weather at shanghai",
+      "intent": "CheckWeatherValue",
+      "entities": []
+    },
+    {
+      "text": "weather at geographyV2 geographyV2",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 11,
+          "endPos": 21
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 23,
+          "endPos": 33
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 11,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "weather at dubai uae",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 17,
+          "endPos": 19
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "weather atlanta",
+      "intent": "CheckWeatherValue",
+      "entities": []
+    },
+    {
+      "text": "weather geographyV2 geographyV2",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 8,
+          "endPos": 18
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 20,
+          "endPos": 30
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 8,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "weather dubai uae",
+      "intent": "CheckWeatherValue",
+      "entities": [
+        {
+          "entity": "geographyV2City",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "geographyV2Country",
+          "startPos": 14,
+          "endPos": 16
+        },
+        {
+          "entity": "geoDetails",
+          "startPos": 8,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "any weather alerts",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "are there any severe thunder storm alerts in my area",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 21,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "are there any weather warnings in seattle",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "check for flash floods in my area",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 10,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "coastal flood warning",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "current weather advisories for texas",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "do we have a snow advisory tonight",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "do we have any weather alerts for tomorrow?",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "flood warning hoboken",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "freeze warning",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "guangzhou flood alert",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "how long is the wind chill advisory",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 16,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "humid alert",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i don ' t care about the temperature, is there any emergencies with this weather here say danger",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 25,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i hear there might be a hurricane near sandusky - any mention of this during the weather advisory ?",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 24,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "i need to get the alerts of this week",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "i need to receive the storm information for tomorrow",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i want to know the storm warining which is coming up",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "in los angles , ca , are there any storm warnings ? if so , what are they ?",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 35,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "is there a tornado warning in this area",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "is there a tornado warning near hannibal missouri",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "is there a tornado watch where i am",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "is there any warnings or anything for tonight",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "is there any weather alerts in bellevue?",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "local weather warnings",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "ok , so is there a thunder storm watch",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 19,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "provide storm warnings for philadelphia",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "read the raining warnings for next 3 days",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "show me coastal flood advisory",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "show me the blizzard warning",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "show me wind advisory",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "storm advisory january twenty second two thousand fifteen",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "storm warning",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "tell me about the freeze warning that ' s coming up",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 18,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "weather advisories for topeka",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "what ' s it like in miami as far as weather advisories are concerned",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "what alerts are for my town right now",
+      "intent": "GetWeatherAdvisory",
+      "entities": []
+    },
+    {
+      "text": "what is the current winter storm warning",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "what is the wind chill advisory paris illinois",
+      "intent": "GetWeatherAdvisory",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "all of them",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want them all",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to all of them",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "are there any snow forecasts next week",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "are we supposed to get 5 inches of rain",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 35,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "are we supposed to get 6 inches of snow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 35,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "do i need a coat tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "do i need a jacket at ford field",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "do i need my heavy coats next week",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 13,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "do i need my scarf on tuesday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "do i need to carry an umbrella",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 13,
+          "endPos": 17
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 22,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "does the snow have 30 inches now",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "i need to wear a skirt at saturday, right?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 17,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "i want to play vollyball, will the weather be hot",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 10,
+          "endPos": 23
+        },
+        {
+          "entity": "WeatherCondition",
+          "startPos": 46,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "is it able to wear shirts",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 14,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "is it cold in london in december",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "is it foggy",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain all day",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain today at five p m",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain today tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain tomorrow at pattaya",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain tomorrow in nevada missouri",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it going to rain tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it going to snow tomorrow in lexington",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "is it gonna rain in west columbia tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "is it gonna snow in seattle tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "is it hot in cancun in may",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "is it perfect for game hunt",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 18,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "is it raining in my location",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "is it raining in seattle monday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "is it raining in this week",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "is it raining right now in stoke-on-trent",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "is it raining tomorrow in hanoi",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "is it rainy now",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is it rainy outside",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is it snowing tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "is it suitable for fishing tomorrow in shanghai",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "is it suitable for hiking in seattle this weekend?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 19,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "is it supposed to rain in conroe all day",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "is it warm in beijing in march",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "is it windy",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 6,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is march too early to visit alaska",
+      "intent": "QueryWeather",
+      "entities": []
+    },
+    {
+      "text": "is may too early to go to thailand",
+      "intent": "QueryWeather",
+      "entities": []
+    },
+    {
+      "text": "is the weather good in the coming week?",
+      "intent": "QueryWeather",
+      "entities": []
+    },
+    {
+      "text": "is the wind strong in my area",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is the wind strong tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is the wind strong tonight ?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "is there any rain forecast this week",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "is there going to be snow tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 21,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "is there going to be strong wind outside ?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 28,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "is there gonna be any rain today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 22,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "is this going to rain this weekend",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "need to wear thick clothes tomorrow?",
+      "intent": "QueryWeather",
+      "entities": []
+    },
+    {
+      "text": "should i take an umbrella tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "should i take an umbrella with me tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "should i wear snow pants",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 14,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "should i wear snow pants this weekend",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 14,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "will i get sunburned today",
+      "intent": "QueryWeather",
+      "entities": []
+    },
+    {
+      "text": "will i need an umbrella on wednesday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "will i need my scarf on monday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "will i need my umbrella for friday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "will i need my umbrella today in killarney manitoba",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "will i need the rain boots this weekend",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 16,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "will i wear short sleeves today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "SuitableFor",
+          "startPos": 12,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "will it be cold enough to go sledding wednesday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 29,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "will it be cool to play basketball",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 19,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "will it be hot for t-shirts today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 13
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "will it be nice and warm in orlando this weekend",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "will it be nice enough for short sleeves in boise tomorrwow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 27,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "will it be raining at myrtle beach today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "will it be raining in ho chi minh city tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "will it be raining tomorrow at tokyo",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "will it be snowing tonight",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "will it be sunny enough for a parasol",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 30,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "will it be sunny for football",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 21,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "will it be sunny here tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "will it be sunny in saint austell on sunday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "will it be sunny today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "will it be sunny tomorrow at san jose",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "will it be warm enough for cut offs this weekend",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 27,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "will it be warm enough for swimming",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 14
+        },
+        {
+          "entity": "SuitableFor",
+          "startPos": 27,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "will it be windy at the beach on friday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "will it rain at all this week",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain at five am tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain at five o clock",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain at one o clock on monday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain at paultons park this saturday",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain at twickenham today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain for weekend",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain in five days",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain in gambia",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain the day after tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain today hyderabad",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rain tomorrow tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it rains in ruby corner today",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "will it snow in three days",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "will it windy saturday in my area",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "will presidente bernardes windy today ?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 26,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "will the weather be sunny tomorrow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "will the wind blow in north direction morning",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "will the wind blow in north east direction tomorrow?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "will the winds blow in south west direction this afternoon ?",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "will we get 3 inches of snow",
+      "intent": "QueryWeather",
+      "entities": [
+        {
+          "entity": "WeatherCondition",
+          "startPos": 24,
+          "endPos": 27
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "(what is|what's) the {WeatherCondition} of {geographyV2} (in|at) {temperature}",
+      "intent": "ChangeTemperatureUnit"
+    },
+    {
+      "pattern": "[the] {WeatherRange} {Historic} {Historic} in {geographyV2}",
+      "intent": "CheckWeatherTime"
+    },
+    {
+      "pattern": "[the] {WeatherRange} {Historic} {Historic} at {geographyV2}",
+      "intent": "CheckWeatherTime"
+    },
+    {
+      "pattern": "forecast {geographyV2}",
+      "intent": "ForecastWeather"
+    },
+    {
+      "pattern": "forecast weather at {geographyV2}",
+      "intent": "ForecastWeather"
+    },
+    {
+      "pattern": "weather at {geographyV2}",
+      "intent": "CheckWeatherValue"
+    },
+    {
+      "pattern": "weather {geographyV2}",
+      "intent": "CheckWeatherValue"
+    },
+    {
+      "pattern": "(receive|get|read) [the] {WeatherCondition} (warning[s]|alert[s]) [for] {datetimeV2}",
+      "intent": "GetWeatherAdvisory"
+    }
+  ],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "dimension",
+      "roles": []
+    },
+    {
+      "name": "geographyV2",
+      "roles": []
+    },
+    {
+      "name": "temperature",
+      "roles": []
+    }
+  ],
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "WeatherSkill",
+  "desc": "",
+  "culture": "en-us"
+}

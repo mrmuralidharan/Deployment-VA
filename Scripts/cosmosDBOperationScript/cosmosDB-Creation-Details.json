@@ -1,0 +1,29 @@
+[
+	{
+		"resourceGroupName": "HD-Homer-2",
+		"cosmosDbAccountName": "homeruatva",
+		"cosmosDbName": "AcronymDetails",
+		"cosmosContainerName": "Acronym",
+		"partitionKeyPath": "/Acronym",
+		"skillName":"Acronym",
+		"containerItemsValue":"C:\\VirtualAssistant\\deployment_Error\\Scripts\\cosmosDBOperationScript\\AcronymCosmosDB.json"
+	},
+	{
+		"resourceGroupName": "HD-Homer-2",
+		"cosmosDbAccountName": "homeruatva",
+		"cosmosDbName": "departmentLookup",
+		"cosmosContainerName": "DeptDetails",
+		"partitionKeyPath": "/deptNumber",
+		"skillName":"Department",
+		"containerItemsValue":"C:\\VirtualAssistant\\deployment_Error\\Scripts\\cosmosDBOperationScript\\departmentLookupCosmosDB.json"
+	},
+	{
+		"resourceGroupName": "HD-Homer-2",
+		"cosmosDbAccountName": "homeruatva",
+		"cosmosDbName": "Helpdb",
+		"cosmosContainerName": "HelpContainer",
+		"partitionKeyPath": "/type",
+		"skillName":"Help",
+		"containerItemsValue":"C:\\VirtualAssistant\\deployment_Error\\Scripts\\cosmosDBOperationScript\\HelpCosmosDB.json"
+	}
+]

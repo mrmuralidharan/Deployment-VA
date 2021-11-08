@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest-2.1.preview-0.json",
+  "$id": "WeatherSkill",
+  "name": "Weather Skill",
+  "description": "The Weather skill provides an example of displaying the current weather using AccuWeather.",
+  "publisherName": "Microsoft",
+  "version": "1.0",
+  "iconUrl": "https://pagerskill-7xcyzii.azurewebsites.net/images/WeatherSkill.png",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "privacyUrl": "https://pagerskill-7xcyzii.azurewebsites.net/privacy.html",
+  "tags": [
+    "weather",
+    "skill"
+  ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV3",
+      "description": "Production endpoint for the Weather Skill",
+      "endpointUrl": "https://pagerskill-7xcyzii.azurewebsites.net/api/messages",
+      "msAppId": "d595c693-3cc6-4519-83c5-b1dea25faed2"
+    }
+  ],
+  "dispatchModels": {
+    "languages": {
+      "en-us": [
+        {
+          "id": "WeatherSkillLuModel-en",
+          "name": "Weather LU (English)",
+          "contentType": "application/lu",
+          "url": "file://WeatherSkill.lu",
+          "description": "English language model for the skill"
+        }
+      ]
+    },
+    "intents": {
+      "CheckWeatherValue": "#/activities/message",
+      "*": "#/activities/message"
+    }
+  },
+  "activities": {
+    "message": {
+      "type": "message",
+      "description": "Receives the users utterance and attempts to resolve it using the skill's LU models"
+    },
+    "weatherForecast": {
+      "description": "Weather forecast in a Geography or Latitude & Longitude",
+      "type": "event",
+      "name": "WeatherForecast",
+      "value": {
+        "$ref": "#/definitions/locationInfo"
+      },
+      "resultValue": {
+        "$ref": "#/definitions/actionResult"
+      }
+    }
+  },
+  "definitions": {
+    "locationInfo": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string",
+          "description": "A Geography name or its Latitude & Longitude(north and east are above zero). E.g., Beijing or 39.90,116.40."
+        }
+      }
+    },
+    "actionResult": {
+      "type": "object",
+      "properties": {
+        "actionSuccess": {
+          "type": "boolean",
+          "description": "result of action"
+        },
+        "summary": {
+          "type": "string",
+          "description": "weather summary for this location."
+        }
+      }
+    }
+  }
+}

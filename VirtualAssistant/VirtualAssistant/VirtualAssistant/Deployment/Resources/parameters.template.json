@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "useCosmosDb": {
+      "value": true
+    },
+    "useStorage": {
+      "value": true
+    },
+    "useContentModerator": {
+      "value": true
+    },
+    "appServicePlanSku": {
+      "value": {
+        "tier": "Standard",
+        "name": "S1"
+      }
+    },
+    "botServiceSku": {
+      "value": "S1"
+    },
+    "luisPredictionSku": {
+      "value": "F0"
+    },
+    "qnaMakerServiceLocation": {
+      "value": "westus"
+    },
+    "qnaMakerServiceSku": {
+      "value": "F0"
+    },
+    "qnaMakerSearchSku": {
+      "value": "free"
+    }
+  }
+}
