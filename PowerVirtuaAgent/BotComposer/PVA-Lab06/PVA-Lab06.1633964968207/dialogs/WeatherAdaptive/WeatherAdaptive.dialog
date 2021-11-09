@@ -1,0 +1,179 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "3lEswz",
+    "name": "WeatherAdaptive",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "17jCj6"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "FvbjdO"
+          },
+          "method": "GET",
+          "url": "https://atlas.microsoft.com/search/address/json?api-version=1.0&query=${virtualagent.City}&subscription-key=PaGpx-msFshCMDPqaT_rqi_off2XKjQSqnHisn98A5k&language=en-us&limit=1",
+          "resultProperty": "dialog.address_response",
+          "contentType": "application/json",
+          "responseType": "json"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "sQPVrs"
+          },
+          "condition": "=dialog.address_response.statusCode==200",
+          "actions": [
+            {
+              "$kind": "Microsoft.HttpRequest",
+              "$designer": {
+                "id": "JAL4fM"
+              },
+              "method": "GET",
+              "resultProperty": "user.apiResponse_Forecast",
+              "responseType": "json",
+              "contentType": "application/json",
+              "url": "https://atlas.microsoft.com/weather/forecast/daily/json?api-version=1.0&query=${dialog.address_response.content.results[0].position.lat},${dialog.address_response.content.results[0].position.lon}&duration=5&subscription-key=PaGpx-msFshCMDPqaT_rqi_off2XKjQSqnHisn98A5k&language=en-us&limit=1"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "AEgmri"
+              },
+              "condition": "=user.apiResponse_Forecast.statusCode==200",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperties",
+                  "$designer": {
+                    "id": "uw9CVm"
+                  },
+                  "assignments": [
+                    {
+                      "value": "${virtualagent.City}",
+                      "property": "user.Location"
+                    },
+                    {
+                      "property": "user.Date",
+                      "value": "${user.apiResponse_Forecast.content.forecasts[0].date}"
+                    },
+                    {
+                      "property": "user.MinimumTemperature",
+                      "value": "=(float(${user.apiResponse_Forecast.content.forecasts[0].realFeelTemperature.minimum.value})*1.8)+32"
+                    },
+                    {
+                      "property": "user.MaximumTemperature",
+                      "value": "=(float(${user.apiResponse_Forecast.content.forecasts[0].realFeelTemperature.maximum.value})*1.8)+32"
+                    },
+                    {
+                      "property": "user.TempUnit",
+                      "value": "°F"
+                    },
+                    {
+                      "property": "user.ShortPhrase",
+                      "value": "${user.apiResponse_Forecast.content.forecasts[0].day.shortPhrase}"
+                    },
+                    {
+                      "property": "user.WindDescription",
+                      "value": "Winds ${user.apiResponse_Forecast.content.forecasts[0].day.wind.speed.value} ${user.apiResponse_Forecast.content.forecasts[1].day.wind.speed.unit} ${user.apiResponse_Forecast.content.forecasts[1].day.wind.direction.localizedDescription}"
+                    },
+                    {
+                      "property": "user.Day1",
+                      "value": "${user.apiResponse_Forecast.content.forecasts[1].date}"
+                    },
+                    {
+                      "property": "user.MinimumTemperatureDay1",
+                      "value": "=(float(${user.apiResponse_Forecast.content.forecasts[1].realFeelTemperature.minimum.value})*1.8)+32"
+                    },
+                    {
+                      "property": "user.MaximumTemperatureDay1",
+                      "value": "((${user.apiResponse_Forecast.content.forecasts[1].realFeelTemperature.maximum.value}"
+                    },
+                    {
+                      "property": "user.Day2",
+                      "value": "${user.apiResponse_Forecast.content.forecasts[2].date}"
+                    },
+                    {
+                      "property": "user.MinimumTemperatureDay2",
+                      "value": "=((${user.apiResponse_Forecast.content.forecasts[2].realFeelTemperature.minimum.value} * 1.8)+32)"
+                    },
+                    {
+                      "property": "user.MaximumTemperatureDay2",
+                      "value": "=((${user.apiResponse_Forecast.content.forecasts[2].realFeelTemperature.maximum.value} * 1.8)+32)"
+                    },
+                    {
+                      "property": "user.Day3",
+                      "value": "${user.apiResponse_Forecast.content.forecasts[3].date}"
+                    },
+                    {
+                      "property": "user.MinimumTemperatureDay3",
+                      "value": "=((${user.apiResponse_Forecast.content.forecasts[3].realFeelTemperature.minimum.value} * 1.8)+32)"
+                    },
+                    {
+                      "property": "user.MaximumTemperatureDay3",
+                      "value": "=((${user.apiResponse_Forecast.content.forecasts[3].realFeelTemperature.maximum.value} * 1.8)+32)"
+                    },
+                    {
+                      "property": "user.DateFormat",
+                      "value": "=formatDateTime(user.Date, 'dd/MM')"
+                    },
+                    {
+                      "property": "user.Date1Format",
+                      "value": "=formatDateTime(user.Day1, 'dd/MM')"
+                    },
+                    {
+                      "property": "user.Date2Format",
+                      "value": "=formatDateTime(user.Day2, 'dd/MM')"
+                    },
+                    {
+                      "property": "user.Date3Format",
+                      "value": "=formatDateTime(user.Day3, 'dd/MM')"
+                    },
+                    {
+                      "property": "user.date0",
+                      "value": "=dayOfWeek(user.Date)"
+                    },
+                    {
+                      "property": "user.maxTemp",
+                      "value": "=(float(user.MaximumTemperature)*1.8)+32"
+                    }
+                  ]
+                }
+              ],
+              "elseActions": []
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "NuvTM0"
+              },
+              "activity": "${SendActivity_NuvTM0()}"
+            }
+          ],
+          "elseActions": []
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "9wEjWn"
+          },
+          "activity": "${SendActivity_9wEjWn()}"
+        }
+      ]
+    }
+  ],
+  "generator": "WeatherAdaptive.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "WeatherAdaptive"
+}

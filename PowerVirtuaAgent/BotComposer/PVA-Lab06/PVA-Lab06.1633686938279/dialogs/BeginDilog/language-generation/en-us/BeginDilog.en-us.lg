@@ -1,0 +1,122 @@
+[import](common.lg)
+
+# TemplateName()
+-TemplateValue
+# TemplateName1()
+- # Chicken()
+-Chicken
+
+- # Steak()
+-Steak
+
+- # Tofu()
+-Tofu
+
+- # SteakImageURL()
+-https://contososcubademo.azurewebsites.net/assets/steak.jpg
+- # ChickenImageURL()
+-https://contososcubademo.azurewebsites.net/assets/chicken.jpg
+- # TofuImageURL()
+-https://contososcubademo.azurewebsites.net/assets/tofu.jpg
+
+- # adaptivecardjson_meals(location)
+- ```
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.1",
+    "body": [
+            {
+            "type": "TextBlock",
+            "text": "Meal delivery options for ${location}:",
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "test",
+                            "size": "Stretch",
+                            "spacing": "Medium",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "test",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "test",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "test",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"                            
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "test",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "test",
+                            "wrap": true,
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+- # AdaptiveCardMeals(location)
+-[Activity
+ -   Attachments = ${json(adaptivecardjson_meals(location))}
+-]

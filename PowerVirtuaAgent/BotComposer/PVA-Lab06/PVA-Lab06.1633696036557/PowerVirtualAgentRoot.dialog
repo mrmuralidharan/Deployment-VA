@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "PVA-Lab06",
+    "id": "000000"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "id": "VIW2Cr"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "vasKgK"
+          },
+          "activity": "${SendActivity_vasKgK()}"
+        }
+      ]
+    }
+  ],
+  "$schema": "schemas/app.schema",
+  "generator": "PowerVirtualAgentRoot.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer",
+    "id": "PowerVirtualAgentRoot.lu"
+  }
+}

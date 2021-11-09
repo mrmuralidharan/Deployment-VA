@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/botframework-sdk/master/schemas/component/component.schema",
+  "$role": "implements(Microsoft.IDialog)",
+  "title": "Lesson 3 - A topic with a condition, variables and a pre-built entity",
+  "type": "object",
+  "properties": {},
+  "$result": {
+    "type": "object",
+    "properties": {}
+  }
+}

@@ -1,0 +1,73 @@
+[import](common.lg)
+
+#ResultThumbnailCard(resultObj)
+[ThumbnailCard
+    title = ${resultObj.name}
+    subtitle = ${resultObj.ApptTypeName} ${resultObj.newWaitTime} days
+    text = ${resultObj.address}, ${resultObj.city}, ${resultObj.state} - ${resultObj.zip} 
+    image = https://picsum.photos/200/200
+    buttons = tel://${resultObj.phone}
+]
+
+#ResultActivity(resultArrObj)
+[Activity
+name = An Example Name
+Attachments = ${ foreach ( resultArrObj, x, ResultThumbnailCard(x) ) }  
+AttachmentLayout = carousel
+]
+
+
+# SendActivity_VhsS9l_text()
+- ${user.json}
+# SendActivity_VhsS9l()
+[Activity
+    Text = ${SendActivity_VhsS9l_text()}
+]
+
+# SendActivity_bRLw9C_text()
+- ${user.finalArr}
+# SendActivity_bRLw9C()
+[Activity
+    Text = ${SendActivity_bRLw9C_text()}
+]
+
+# SendActivity_TI43OQ_text()
+- ${user.test}
+
+
+
+# SendActivity_TI43OQ()
+[Activity
+    Text = ${SendActivity_TI43OQ_text()}
+]
+
+# SendActivity_USAiJ1()
+- ${ResultActivity(user.single)}
+# SendActivity_Rgtzu7_text()
+- ```${count(user.test)}
+${user.test}```
+# SendActivity_Rgtzu7()
+[Activity
+    Text = ${SendActivity_Rgtzu7_text()}
+]
+
+# SendActivity_D4q6st_text()
+- ${user.single}
+# SendActivity_D4q6st()
+[Activity
+    Text = ${SendActivity_D4q6st_text()}
+]
+
+# SendActivity_R8lrdR_text()
+- ${user.singlejson}
+# SendActivity_R8lrdR()
+[Activity
+    Text = ${SendActivity_R8lrdR_text()}
+]
+
+# SendActivity_QAVyhH_text()
+- ${user.single}
+# SendActivity_QAVyhH()
+[Activity
+    Text = ${SendActivity_QAVyhH_text()}
+]

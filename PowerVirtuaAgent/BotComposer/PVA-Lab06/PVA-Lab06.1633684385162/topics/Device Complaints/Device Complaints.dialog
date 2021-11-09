@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Device Complaints",
+    "description": "",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/19dbc428-272b-4de8-8bd3-48921355608b/dialog/new_topic_0f64f3ffc49544bdb62ea5c049e7e161"
+  },
+  "id": "new_topic_0f64f3ffc49544bdb62ea5c049e7e161",
+  "isSystemTopic": false
+}

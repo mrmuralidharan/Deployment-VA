@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Start over",
+    "description": "System Intent Start Over",
+    "link": ""
+  },
+  "id": "new_topic_15fefa1a435d44c589874affdcd1fee4_8a4964498f83424bb3a86295bf7d0952_startover",
+  "isSystemTopic": true
+}

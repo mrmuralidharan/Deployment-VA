@@ -1,0 +1,82 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "3lEswz",
+    "name": "WeatherAdaptive",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "17jCj6"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "FvbjdO"
+          },
+          "method": "GET",
+          "url": "https://atlas.microsoft.com/search/address/json?api-version=1.0&query=${virtualagent.City}&subscription-key=PaGpx-msFshCMDPqaT_rqi_off2XKjQSqnHisn98A5k&language=en-us&limit=1",
+          "resultProperty": "dialog.address_response",
+          "contentType": "application/json",
+          "responseType": "json"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "sQPVrs"
+          },
+          "condition": "=dialog.address_response.statusCode==200",
+          "actions": [
+            {
+              "$kind": "Microsoft.HttpRequest",
+              "$designer": {
+                "id": "JAL4fM"
+              },
+              "method": "GET",
+              "resultProperty": "user.apiResponse_Forecast",
+              "responseType": "json",
+              "contentType": "application/json",
+              "url": "https://atlas.microsoft.com/weather/forecast/daily/json?api-version=1.0&query=${dialog.address_response.content.results[0].position.lat},${dialog.address_response.content.results[0].position.lon}&duration=5&subscription-key=PaGpx-msFshCMDPqaT_rqi_off2XKjQSqnHisn98A5k&language=en-us&limit=1"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "AEgmri"
+              },
+              "condition": "=user.apiResponse_Forecast.statusCode==200",
+              "actions": [],
+              "elseActions": []
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "NuvTM0"
+              },
+              "activity": "${SendActivity_NuvTM0()}"
+            }
+          ],
+          "elseActions": []
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "9wEjWn"
+          },
+          "activity": "${SendActivity_9wEjWn()}"
+        }
+      ]
+    }
+  ],
+  "generator": "WeatherAdaptive.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "WeatherAdaptive"
+}

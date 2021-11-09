@@ -1,0 +1,73 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "yyTPx9",
+    "name": "AdaptiveCarouseHardCoded",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "up387b"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "9M6cBZ"
+          },
+          "value": [
+            {
+              "name": "XYZ Clinic",
+              "address": "6546 Some Steet",
+              "city": "SomeCity",
+              "state": "SomeState",
+              "zip": "99999",
+              "phone": "999-888-7777 ",
+              "ApptTypeName": "PRIMARY CARE",
+              "newWaitTime": 23
+            },
+            {
+              "name": "YZ Clinic",
+              "address": "546 Some Steet",
+              "city": "City",
+              "state": "State",
+              "zip": "99999",
+              "phone": "999-888-7777 ",
+              "ApptTypeName": "PRIMARY CARE",
+              "newWaitTime": 23
+            },
+            {
+              "name": "Z Clinic",
+              "address": "46 Some Steet",
+              "city": "City",
+              "state": "State",
+              "zip": "99999",
+              "phone": "999-888-7777 ",
+              "ApptTypeName": "PRIMARY CARE",
+              "newWaitTime": 23
+            }
+          ],
+          "property": "user.Hardcoded"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Ohu6uy"
+          },
+          "activity": "${SendActivity_Ohu6uy()}"
+        }
+      ]
+    }
+  ],
+  "generator": "AdaptiveCarouseHardCoded.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "AdaptiveCarouseHardCoded"
+}

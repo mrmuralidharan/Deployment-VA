@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Goodbye",
+    "description": "System Intent Goodbye",
+    "link": ""
+  },
+  "id": "new_topic_15fefa1a435d44c589874affdcd1fee4_f56d1a3e522740c78f9fac0939332dbd_goodbye",
+  "isSystemTopic": true
+}

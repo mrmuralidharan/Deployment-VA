@@ -1,0 +1,34 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "zIYmRl",
+    "name": "forecastAdaptiveCard",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "l5FBS6"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "kKv25Y"
+          },
+          "activity": "${SendActivity_kKv25Y()}"
+        }
+      ]
+    }
+  ],
+  "generator": "forecastAdaptiveCard.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "forecastAdaptiveCard"
+}

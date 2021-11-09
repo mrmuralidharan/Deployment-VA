@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Confirmed Success",
+    "description": "System Intent Confirmed Success",
+    "link": ""
+  },
+  "id": "new_topic_15fefa1a435d44c589874affdcd1fee4_db1f76b081dc43389df9dd2df7518737_confirmedsuccess",
+  "isSystemTopic": true
+}

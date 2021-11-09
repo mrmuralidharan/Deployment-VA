@@ -1,0 +1,54 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "PVA-Lab06",
+    "id": "000000"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "fxyCtP",
+        "name": "test"
+      },
+      "intent": "test",
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "K2BV20"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_K2BV20()}",
+          "defaultValue": "="
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "nSuM3g"
+          },
+          "activity": "${SendActivity_nSuM3g()}"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "SkCPdY"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "schemas/app.schema",
+  "generator": "PowerVirtualAgentRoot.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer",
+    "id": "PowerVirtualAgentRoot.lu"
+  },
+  "id": "PowerVirtualAgentRoot"
+}

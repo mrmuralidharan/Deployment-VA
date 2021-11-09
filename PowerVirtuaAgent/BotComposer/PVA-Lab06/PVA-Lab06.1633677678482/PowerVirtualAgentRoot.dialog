@@ -1,0 +1,50 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "PVA-Lab06",
+    "id": "000000",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "MGIflT",
+        "name": "weatherPVA"
+      },
+      "intent": "weatherPVA",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "onpy0K"
+          },
+          "activity": "${SendActivity_onpy0K()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "fb99dg"
+          },
+          "activityProcessed": true,
+          "dialog": "new_topic_a3548263e5f849ba8bcdfe3ca50dc514"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "Rdz8eu"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "schemas/app.schema",
+  "generator": "PowerVirtualAgentRoot.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer",
+    "id": "PowerVirtualAgentRoot.lu"
+  },
+  "id": "PowerVirtualAgentRoot"
+}

@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_2hJhTp()
+[Activity
+    Text = ${SendActivity_2hJhTp_text()}
+]
+
+# SendActivity_2hJhTp_text()
+- virtualagent.1

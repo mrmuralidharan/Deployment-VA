@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Add a promo code",
+    "description": "https://pvaiad.powerappsportals.com/FAQs/",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/19dbc428-272b-4de8-8bd3-48921355608b/dialog/new_topic_547ba4ac94d5497494e8d3231bb7beca"
+  },
+  "id": "new_topic_547ba4ac94d5497494e8d3231bb7beca",
+  "isSystemTopic": false
+}

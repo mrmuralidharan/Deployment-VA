@@ -1,0 +1,28 @@
+[import](common.lg)
+
+#ResultThumbnailCard(resultObj)
+[ThumbnailCard
+    title = ${resultObj.name}
+    subtitle = ${resultObj.ApptTypeName} ${resultObj.newWaitTime} days
+    text = ${resultObj.address}, ${resultObj.city}, ${resultObj.state} - ${resultObj.zip} 
+    image = https://picsum.photos/200/200
+    buttons = tel://${resultObj.phone}
+]
+
+#ResultActivity(resultArrObj)
+[Activity
+name = An Example Name
+Attachments = ${ foreach ( resultArrObj, x, ResultThumbnailCard(x) ) }  
+AttachmentLayout = carousel
+]
+
+
+# SendActivity_wYlwW8()
+- ${user.Val1}
+# SendActivity_W88ODq()
+[Activity
+    Text = ${SendActivity_W88ODq_text()}
+]
+
+# SendActivity_W88ODq_text()
+- ${user.arr}

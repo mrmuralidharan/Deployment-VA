@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Escalate",
+    "description": "System Intent Escalate",
+    "link": ""
+  },
+  "id": "new_topic_15fefa1a435d44c589874affdcd1fee4_954135cafcd647eaae5999ad91fc08cf_talktoagent",
+  "isSystemTopic": true
+}

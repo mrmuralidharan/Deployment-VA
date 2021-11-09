@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "card",
+    "description": "",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/fbdce267-6577-4c92-8f18-846045038984/dialog/new_topic_0335d4d0a72c4de0b9d0a346dcea5590"
+  },
+  "id": "new_topic_0335d4d0a72c4de0b9d0a346dcea5590",
+  "isSystemTopic": false
+}

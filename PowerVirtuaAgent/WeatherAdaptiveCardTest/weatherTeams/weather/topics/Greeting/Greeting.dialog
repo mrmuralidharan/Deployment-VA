@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Greeting",
+    "description": "This is the default greeting when a chat begins. Start by having your bot or virtual agent introduce itself. When building out topics, consider whether you need to comply with applicable local law.",
+    "link": ""
+  },
+  "id": "new_topic_15fefa1a435d44c589874affdcd1fee4_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart",
+  "isSystemTopic": true
+}

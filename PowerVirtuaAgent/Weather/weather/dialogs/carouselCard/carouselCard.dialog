@@ -1,0 +1,42 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "C78Tsx",
+    "name": "carouselCard",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "eunIAT"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "XuViJg"
+          },
+          "property": "user.card",
+          "value": "=json(virtualagent.cardone)"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "pVYZw6"
+          },
+          "activity": "${SendActivity_pVYZw6()}"
+        }
+      ]
+    }
+  ],
+  "generator": "carouselCard.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "carouselCard"
+}

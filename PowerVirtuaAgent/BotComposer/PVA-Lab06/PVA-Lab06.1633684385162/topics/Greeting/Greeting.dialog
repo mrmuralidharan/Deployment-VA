@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Greeting",
+    "description": "This is the default greeting when a chat begins. Start by having your bot or virtual agent introduce itself. When building out topics, consider whether you need to comply with applicable local law.",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/19dbc428-272b-4de8-8bd3-48921355608b/dialog/new_topic_19dbc428272b4de88bd348921355608b_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart"
+  },
+  "id": "new_topic_19dbc428272b4de88bd348921355608b_ba7b967c97ba4c39bca58a8bb6a72d59_conversationstart",
+  "isSystemTopic": true
+}

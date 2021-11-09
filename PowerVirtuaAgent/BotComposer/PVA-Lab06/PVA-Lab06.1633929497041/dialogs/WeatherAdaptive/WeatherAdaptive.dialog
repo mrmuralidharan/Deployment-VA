@@ -1,0 +1,71 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "3lEswz",
+    "name": "WeatherAdaptive",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "17jCj6"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "kQqFcu",
+            "comment": "Weather Api query based on the city"
+          },
+          "method": "GET",
+          "url": "https://atlas.microsoft.com/search/address/json?api-version=1.0&query=virtualagent.City&subscription-key=PaGpx-msFshCMDPqaT_rqi_off2XKjQSqnHisn98A5k&language=en-us&limit=1",
+          "responseType": "json",
+          "contentType": "application/json",
+          "resultProperty": "dialog.api_response"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "GkXPk7"
+          },
+          "condition": "=dialog.api_response.statusCode==200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "qP5bd3"
+              },
+              "activity": "${SendActivity_qP5bd3()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "J9LDyN"
+              },
+              "activity": "${SendActivity_J9LDyN()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Pxqidy"
+          },
+          "activity": "${SendActivity_Pxqidy()}"
+        }
+      ]
+    }
+  ],
+  "generator": "WeatherAdaptive.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "WeatherAdaptive"
+}

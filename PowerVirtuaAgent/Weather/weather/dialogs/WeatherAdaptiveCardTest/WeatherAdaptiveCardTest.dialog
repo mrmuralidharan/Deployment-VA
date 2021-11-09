@@ -1,0 +1,34 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "giisaI",
+    "name": "WeatherAdaptiveCardTest",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "2NFP2O"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "DuonFO"
+          },
+          "activity": "${SendActivity_DuonFO()}"
+        }
+      ]
+    }
+  ],
+  "generator": "WeatherAdaptiveCardTest.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "WeatherAdaptiveCardTest"
+}

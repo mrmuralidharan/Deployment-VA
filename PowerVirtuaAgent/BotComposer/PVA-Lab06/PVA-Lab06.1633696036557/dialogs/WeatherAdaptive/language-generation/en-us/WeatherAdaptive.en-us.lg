@@ -1,0 +1,26 @@
+[import](common.lg)
+
+# adaptivecardjson_meals(location)
+- ```
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.1",
+    "body": [
+            {
+            "type": "TextBlock",
+            "text": "Meal delivery options for ${location}:",
+            "size": "Medium",
+            "weight": "Bolder"
+        }     
+    ]
+}
+```
+
+# AdaptiveCardMeals(location)
+[Activity
+    Attachments = ${json(adaptivecardjson_meals(location))}
+]
+
+# SendActivity_Pxqidy()
+- ${AdaptiveCardMeals(virtualagent.City)}

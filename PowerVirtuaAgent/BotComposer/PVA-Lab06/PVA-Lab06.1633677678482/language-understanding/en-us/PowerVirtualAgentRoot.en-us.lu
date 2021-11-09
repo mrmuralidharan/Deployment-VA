@@ -1,0 +1,13 @@
+
+# weatherPVA
+> add some example phrases to trigger this intent:
+- please tell me the weather
+- what is the weather like in {@city=Seattle}
+- weather at {geographyV2}
+- weather {@postalCode}
+- forecast {geographyV2}
+- forecast {@postalCode}
+>Entity Definition:
+@ ml city
+@ prebuilt geographyV2
+@ ml postalCode

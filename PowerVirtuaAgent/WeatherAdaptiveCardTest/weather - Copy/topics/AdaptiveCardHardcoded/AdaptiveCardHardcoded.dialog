@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "AdaptiveCardHardcoded",
+    "description": "",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/e846edfc-63ae-4929-a8eb-bbadd49d9b72/dialog/new_topic_72c48117d1874e5fa5208192bc8d2d7b"
+  },
+  "id": "new_topic_72c48117d1874e5fa5208192bc8d2d7b",
+  "isSystemTopic": false
+}

@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "weather",
+    "description": "",
+    "link": ""
+  },
+  "id": "new_topic_e58cc0ad016048dd833776d964e183b0",
+  "isSystemTopic": false
+}

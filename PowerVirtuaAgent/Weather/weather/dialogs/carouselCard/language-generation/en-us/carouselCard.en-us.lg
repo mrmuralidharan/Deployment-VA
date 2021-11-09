@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_pVYZw6()
+[Activity
+    Text = ${SendActivity_pVYZw6_text()}
+]
+
+# SendActivity_pVYZw6_text()
+- ${user.card}

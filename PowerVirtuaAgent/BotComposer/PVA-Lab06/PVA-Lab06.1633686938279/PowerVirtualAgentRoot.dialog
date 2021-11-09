@@ -1,0 +1,25 @@
+{
+  "$kind": "Microsoft.OnIntent",
+  "$designer": {
+    "id": "fxyCtP",
+    "name": "test"
+  },
+  "intent": "test",
+  "actions": [
+    {
+      "$kind": "Microsoft.SendActivity",
+      "$designer": {
+        "id": "nSuM3g"
+      },
+      "activity": "${SendActivity_nSuM3g()}"
+    },
+    {
+      "$kind": "Microsoft.EndDialog",
+      "$designer": {
+        "id": "SkCPdY"
+      }
+    }
+  ],
+  "id": "PowerVirtualAgentRoot",
+  "generator": "PowerVirtualAgentRoot.lg"
+}

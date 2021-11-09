@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_XEBR6A()
+[Activity
+    Text = ${SendActivity_XEBR6A_text()}
+]
+
+# SendActivity_XEBR6A_text()
+- ${user.cardone}
+# SendActivity_SiKsFZ()
+[Activity
+    Text = ${SendActivity_SiKsFZ_text()}
+]
+
+# SendActivity_SiKsFZ_text()
+- ${user.arr}

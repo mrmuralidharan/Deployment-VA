@@ -1,0 +1,161 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "3mbpJN",
+    "name": "finalDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "7xQuav"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "R6cywn"
+          },
+          "property": "user.test",
+          "value": "=split(virtualagent.final, '$')"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "ASDk75"
+          },
+          "value": "=foreach(user.test, item, json(item))",
+          "property": "user.single"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "USAiJ1"
+          },
+          "activity": "${SendActivity_USAiJ1()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "9AEorF"
+          },
+          "condition": "=count(user.test)<1",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "QAVyhH"
+              },
+              "activity": "${SendActivity_QAVyhH()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Rgtzu7"
+              },
+              "activity": "${SendActivity_Rgtzu7()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "wF96tI"
+              },
+              "property": "user.arrFinal",
+              "value": "=createArray(json(virtualagent.final))"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "D4q6st"
+              },
+              "activity": "${SendActivity_D4q6st()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "R8lrdR"
+              },
+              "activity": "${SendActivity_R8lrdR()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "4mm8ux"
+              },
+              "property": "user.singlejson",
+              "value": "=json(user.test)"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "0MDkIp"
+              },
+              "property": "user.json",
+              "value": "=json(virtualagent.final)"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "VhsS9l"
+              },
+              "activity": "${SendActivity_VhsS9l()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "awYEB4"
+              },
+              "property": "user.finalArr",
+              "value": "=createArray(json(virtualagent.final))"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "bRLw9C"
+              },
+              "activity": "${SendActivity_bRLw9C()}"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "TI43OQ"
+              },
+              "activity": "${SendActivity_TI43OQ()}"
+            },
+            {
+              "$kind": "Microsoft.Foreach",
+              "$designer": {
+                "id": "SNzSSh"
+              },
+              "index": "dialog.foreach.index",
+              "value": "dialog.foreach.value",
+              "itemsProperty": "=user.test",
+              "actions": [
+                {
+                  "$kind": "Microsoft.EditArray",
+                  "$designer": {
+                    "id": "Vaz7ow"
+                  },
+                  "changeType": "push",
+                  "itemsProperty": "user.arrFinal[dialog.foreach.index]",
+                  "value": "=user.arrFinal[json(dialog.foreach.value)]",
+                  "resultProperty": "${user.arrFinal}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "finalDialog.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "finalDialog"
+}

@@ -1,0 +1,86 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "EFTTaZ",
+    "name": "AdaptiveCarousel",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "OBAV4m"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "KZqFXd"
+          },
+          "property": "user.Val1",
+          "value": "=json(virtualagent.cardone)"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "wYlwW8"
+          },
+          "activity": "${SendActivity_wYlwW8()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "SMdU0q"
+          },
+          "assignments": [
+            {
+              "property": "user.Val2",
+              "value": "=json(virtualagent.cardtwo)"
+            },
+            {
+              "property": "user.Val3",
+              "value": "=json(virtualagent.cardthree)"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "qxXWPZ"
+          },
+          "assignments": [
+            {
+              "property": "user.arr",
+              "value": "=user.Val1"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.EditArray",
+          "$designer": {
+            "id": "Epqgdj"
+          },
+          "changeType": "push",
+          "value": "=user.Val2",
+          "itemsProperty": "=user.arr"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "W88ODq"
+          },
+          "activity": "${SendActivity_W88ODq()}"
+        }
+      ]
+    }
+  ],
+  "generator": "AdaptiveCarousel.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "AdaptiveCarousel"
+}

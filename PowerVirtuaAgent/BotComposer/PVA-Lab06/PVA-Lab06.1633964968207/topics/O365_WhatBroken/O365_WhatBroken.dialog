@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "O365_WhatBroken",
+    "description": "",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/19dbc428-272b-4de8-8bd3-48921355608b/dialog/new_topic_ef4181d3155044edb91f1945d132dee2"
+  },
+  "id": "new_topic_ef4181d3155044edb91f1945d132dee2",
+  "isSystemTopic": false
+}

@@ -1,0 +1,34 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "X0Ew20",
+    "name": "weatherAdativeCard",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "4zGMxG"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "VKPkum"
+          },
+          "activity": "${SendActivity_VKPkum()}"
+        }
+      ]
+    }
+  ],
+  "generator": "weatherAdativeCard.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "weatherAdativeCard"
+}

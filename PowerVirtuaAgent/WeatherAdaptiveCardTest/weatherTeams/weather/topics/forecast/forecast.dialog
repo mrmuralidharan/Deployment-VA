@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "forecast",
+    "description": "",
+    "link": ""
+  },
+  "id": "new_topic_b934ee2e25ee481aa5a19c0c631ba028",
+  "isSystemTopic": false
+}

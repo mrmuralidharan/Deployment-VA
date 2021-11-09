@@ -1,0 +1,26 @@
+
+# test
+> add some example phrases to trigger this intent:
+- please tell me the weather
+- what is the weather like in {@city=Seattle}
+- forecast {postalCode}
+- forecast {geographyV2}
+- weather {geographyV2}
+- weather {postalCode}
+> entity definitions:
+@ ml city
+@ prebuilt geographyV2
+@ ml postalCode
+
+# TextInput_Response_K2BV20
+> add some example phrases to trigger this intent:
+- please tell me the weather
+- what is the weather like in {@city=Seattle}
+- forecast {postalCode}
+- forecast {geographyV2}
+- weather {geographyV2}
+- weather {postalCode}
+> entity definitions:
+@ ml city
+@ prebuilt geographyV2
+@ ml postalCode

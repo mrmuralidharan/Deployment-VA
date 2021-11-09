@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Lesson 4 - A topic with a condition, variables and custom entity.",
+    "description": "Lesson 4 - This lesson continues to show you how you can create a topic with a conditional branch, variable, and custom entity.  \n\nIn particular it will allow an entity to bypass a follow up question. For instance, try testing with \"I want a business laptop.\"",
+    "link": "https://web.powerva.microsoft.com/environments/Default-73e2dc65-e18d-4421-8da7-e96d82b63aae/bots/19dbc428-272b-4de8-8bd3-48921355608b/dialog/new_topic_19dbc428272b4de88bd348921355608b_85df75ce08a44a9b82cc8f3fdb25f669"
+  },
+  "id": "new_topic_19dbc428272b4de88bd348921355608b_85df75ce08a44a9b82cc8f3fdb25f669",
+  "isSystemTopic": false
+}

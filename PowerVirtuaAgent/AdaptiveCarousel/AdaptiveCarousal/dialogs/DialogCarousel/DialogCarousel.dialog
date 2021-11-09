@@ -1,0 +1,66 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "vbD8is",
+    "name": "DialogCarousel",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "B9Hoaf"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "ch8PtG"
+          },
+          "property": "user.onecard",
+          "value": "=json(virtualagent.jsonone)"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "CwymJz"
+          },
+          "property": "user.twocard",
+          "value": "=json(virtualagent.jsontwo)"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "I3qzd5"
+          },
+          "property": "user.threecard",
+          "value": "=json(virtualagent.jsonthree)"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "flmPPc"
+          },
+          "property": "user.arr",
+          "value": "=createArray(user.onecard,user.twocard,user.threecard)"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "tTGvPY"
+          },
+          "activity": "${SendActivity_tTGvPY()}"
+        }
+      ]
+    }
+  ],
+  "generator": "DialogCarousel.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "DialogCarousel"
+}
